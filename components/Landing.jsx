@@ -28,6 +28,9 @@ function Landing() {
             build their professional and personal networks and get access to
             google developer resources. Atanu Nayak. 
           </p>
+          <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-[130px] text-center mt-5" href="https://developers.google.com/community/gdsc" target="_blank">
+            More Info
+         </a>
         </div>
 
         {/* Landing Image/Animation */}
