@@ -26,7 +26,7 @@ function Landing() {
             more. The aim of the club is to help students to bridge the gap
             between theory and practice, along with this - the students can
             build their professional and personal networks and get access to
-            google developer resources.
+            google developer resources. Atanu Nayak. 
           </p>
         </div>
 
