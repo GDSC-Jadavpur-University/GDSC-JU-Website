@@ -8,7 +8,7 @@ function Footer() {
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
             <div className="sm:flex sm:items-center sm:justify-between">
                 <a href="/#" className="flex items-center mb-4 sm:mb-0">
-                    <img src="./gdsc.png" className="h-8 mr-3" alt="Flowbite Logo" />
+                    <img src="./gdsc.png" className="h-8 mr-3" alt="GDSC Logo" />
                 </a>
                 <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
