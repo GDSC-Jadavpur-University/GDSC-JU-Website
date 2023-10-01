@@ -8,9 +8,14 @@ function Landing() {
       {/* Landing text */}
       <div className="flex justify-center items-center">
         <div className="w-4/5 flex justify-center flex-col">
-          <p className="font-semibold text-5xl mb-10">
+          <p className="font-semibold text-5xl mb-10 leading-[4.8rem]">
             DEVELOPER STUDENT CLUBS <br />{" "}
-            <strong className="font-bold">Jadavpur University</strong>
+            <strong className="font-bold">
+              <span className="text-red-400">Ja</span>
+              <span className="text-blue-400">da</span >
+              <span className="text-yellow-400">vp</span>
+              <span className="text-green-600">ur</span> 
+              &nbsp; University</strong>
           </p>
           <p className="text-1xl">
             The Google Developer Student Club program is a program for
@@ -34,7 +39,7 @@ function Landing() {
         <div>
           <Player
             src="https://lottie.host/b7fcc177-9bcd-41d7-bb12-349512dc7a9f/lzngOsKudE.json"
-            className="player"
+            className="player md:hidden"
             loop
             autoplay
           />

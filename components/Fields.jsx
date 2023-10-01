@@ -3,11 +3,11 @@ import Image from "next/image";
 
 function Fields() {
   return (
-    <div className="p-20">
+    <div className="p-20 relative mx-auto">
       <p className="text-6xl font-semibold text-center">FIELDS WE WORK IN</p>
       {/* Web Development */}
-      <div className="flex items-center py-5">
-        <div className="w-2/3">
+      <div className="grid grid-cols-2 items-center py-5">
+        <div className="w-10/12">
           <p className="font-semibold text-6xl mb-5">Development</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
@@ -17,16 +17,16 @@ function Fields() {
           </p>
         </div>
         <div>
-          <Image src="/webdev-image.png" width={400} height={400} />
+          <Image src="/webdev-image.png" width={400} height={400}  alt=""/>
         </div>
       </div>
 
       {/* DSA AND CP */}
-      <div className="flex items-center py-5 bg-gray-100">
+      <div className="grid grid-cols-2 items-center py-5 bg-gray-100">
         <div>
-          <Image src="/dsacp-image.png" width={400} height={400} />
+          <Image src="/dsacp-image.png" width={400} height={400}  alt=""/>
         </div>
-        <div className="w-2/3">
+        <div className="w-10/12">
           <p className="font-semibold text-6xl mb-5">DSA And CP</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
@@ -38,8 +38,8 @@ function Fields() {
       </div>
 
       {/* Machine Learning */}
-      <div className="flex items-center py-5">
-        <div className="w-2/3">
+      <div className="grid grid-cols-2 items-center py-5">
+        <div className="w-10/12">
           <p className="font-semibold text-6xl mb-5">Machine Learning</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
@@ -49,7 +49,7 @@ function Fields() {
           </p>
         </div>
         <div>
-          <Image src="/ml-image.png" width={400} height={400} />
+          <Image src="/ml-image.png" width={400} height={400} alt=""/>
         </div>
       </div>
     </div>
