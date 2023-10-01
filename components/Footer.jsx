@@ -2,6 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
+
     <footer className="bg-gray-100 py-8 sm:py-12">
       <div className="container mx-auto px-4">
         <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
@@ -79,6 +80,7 @@ function Footer() {
         </div>
       </div>
     </footer>
+
   );
 }
 
