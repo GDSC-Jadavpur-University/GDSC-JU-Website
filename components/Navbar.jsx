@@ -11,7 +11,7 @@ const Navbar = () => {
 
       {/* Nav Links */}
       <div className="flex justify-between items-center w-1/3">
-        <Link href="/">
+        <Link href="/events">
           <p className="text-2xl hover:text-gray-400">Events</p>
         </Link>
         <Link href="/gallery">
