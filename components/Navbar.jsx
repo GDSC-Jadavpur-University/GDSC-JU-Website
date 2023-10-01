@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="h-[10vh] bg-white border-black border-b-2 flex items-center justify-between px-20 sticky top-0 z-50 hover:bg-slate-800 transition-all duration-200">
+    <div className="flex items-center justify-between h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
       {/* Logo Image */}
       <Link href="/">
         <Image src="/gdsc.png" width={400} height={300} alt="logo"/>
