@@ -22,8 +22,13 @@ const Navbar = () => {
         <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
       </Link>
 
+<<<<<<< HEAD
       {/* Display horizontal menu on large screens */}
       <div className="hidden lg:flex lg:justify-start items-center w-1/3 space-x-4">
+=======
+      {/* Nav Links */}
+      <div className="flex justify-between items-center w-1/3 md:hidden">
+>>>>>>> 92d57c1d322eb1435d7fb77ff55c973b13620dd2
         <Link href="/events">
           {/* Replace the link text and colors with your data */}
           <p className="text-2xl hover:text-gray-400 text-red-400">Events</p>
