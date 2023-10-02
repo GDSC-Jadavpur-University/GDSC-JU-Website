@@ -3,8 +3,10 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Landing() {
   return (
-    <div className=" mt-5 w-[95%] mx-auto h-[100%] flex justify-center items-center">
-      
+
+    <div className="px-20 h-[90vh] flex justify-center items-center">
+
+
       {/* Landing text */}
       <div className="flex justify-center items-center">
         <div className="w-4/5 flex justify-center flex-col">
@@ -31,11 +33,17 @@ function Landing() {
             more. The aim of the club is to help students to bridge the gap
             between theory and practice, along with this - the students can
             build their professional and personal networks and get access to
-            google developer resources. Atanu Nayak. 
+            google developer resources. Atanu Nayak.
           </p>
-          <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-[130px] text-center mt-5" href="https://developers.google.com/community/gdsc" target="_blank">
-            More Info
-         </a>
+
+          <a 
+            className="w-24 mt-5 bg-transparent text-center hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full" 
+            href="https://developers.google.com/community/gdsc"
+            target="_blank"
+          >
+            Info
+          </a>
+
         </div>
 
         {/* Landing Image/Animation */}
