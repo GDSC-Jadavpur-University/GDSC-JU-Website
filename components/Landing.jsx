@@ -3,50 +3,43 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Landing() {
   return (
-
-    <div className="px-20 h-[90vh] flex justify-center items-center">
-
-
+    <div className="md:px-5 w-[95%] lg:w-[90%] relative mx-auto lg:mt-20 md:mt-[100px]">
       {/* Landing text */}
       <div className="flex justify-center items-center">
         <div className="w-4/5 flex justify-center flex-col">
           <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
-            DEVELOPER STUDENT CLUBS <br />{" "}
             <strong className="font-bold">
               <span className="text-red-400">Ja</span>
-              <span className="text-blue-400">da</span >
+              <span className="text-blue-400">da</span>
               <span className="text-yellow-400">vp</span>
-              <span className="text-green-600">ur</span> 
-              &nbsp; University</strong>
-          </p>
-          <p className="text-1xl">
-            The Google Developer Student Club program is a program for
-            university students, designed to help them build their technical
-            skills and knowledge and ultimately apply these skills practically
-            to build solutions and solve real world problems for local
-            businesses and communities. <br /> It is open to any student, ranging from
-            novice developers who are just starting, to advanced developers who
-            want to further improve their skills. It is a space for students to
-            learn and collaborate in a peer-to-peer learning environment. The
-            GDSC will host events regarding the fields of web development, app
-            development, competitive programming, machine learning, DSA and
-            more. The aim of the club is to help students to bridge the gap
-            between theory and practice, along with this - the students can
-            build their professional and personal networks and get access to
-            google developer resources. Atanu Nayak.
+              <span className="text-green-600">ur</span>
+              &nbsp; University
+            </strong>
+
+            <br />
+            <span className="text-gray-500 font-normal">
+              Google Developer Student Club
+            </span>
           </p>
 
-          <a 
-            className="w-24 mt-5 bg-transparent text-center hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full" 
-            href="https://developers.google.com/community/gdsc"
-            target="_blank"
-          >
-            Info
-          </a>
+          <p className="w-4/5 text-gray-500 text-lg md:text-base leading-[2.4rem]">
+            Google Developer Student Clubs are university based community groups
+            for students interested in Google developer technologies. Students
+            from all undergraduate or graduate programs with an interest in
+            growing as a developer are welcome. By joining a GDSC, students grow
+            their knowledge in a peer-to-peer learning environment and build
+            solutions for local businesses and their community.
+          </p>
 
+          <div className="w-4/5 flex justify-start items-center mt-10">
+            <button className="bg-red-400 text-white px-5 py-2 rounded-lg font-semibold text-lg">
+              Join Us
+            </button>
+            <button className="bg-gray-200 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
+              Learn More
+            </button>
+          </div>
         </div>
-
-        {/* Landing Image/Animation */}
         <div>
           <Player
             src="https://lottie.host/b7fcc177-9bcd-41d7-bb12-349512dc7a9f/lzngOsKudE.json"
