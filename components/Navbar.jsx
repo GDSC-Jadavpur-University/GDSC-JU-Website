@@ -1,108 +1,143 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react"; // Import React useState hook
 
+import { useState } from "react";
 const Navbar = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false); // State to track menu visibility
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  // Function to toggle the menu
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-  // flex items-center justify-between h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between h-auto lg:h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
       {/* Logo Image */}
       <Link href="/">
-        {/* Replace the source and alt text with your logo */}
-        <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
+
+        <Image
+          src="/gdsc.png"
+          width={300}
+          height={300}
+          alt="logo"
+          style={"object-fit:cover; "}
+        />
       </Link>
+      {/* Nav Links */}
+      <nav>
+        <section className="flex lg:hidden">
+          <div
+            className="space-y-2"
+            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+          >
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          </div>
 
-      {/* Display horizontal menu on large screens */}
-      <div className="hidden lg:flex lg:justify-start items-center w-1/3 space-x-4">
-        <Link href="/events">
-          {/* Replace the link text and colors with your data */}
-          <p className="text-2xl hover:text-gray-400 text-red-400">Events</p>
-        </Link>
-        <Link href="/gallery">
-          {/* Replace the link text and colors with your data */}
-          <p className="text-2xl hover:text-gray-400 text-blue-400">Gallery</p>
-        </Link>
-        <Link href="/projects">
-          {/* Replace the link text and colors with your data */}
-          <p className="text-2xl hover:text-gray-400 text-yellow-400">
-            Projects
-          </p>
-        </Link>
-        <Link href="/team">
-          {/* Replace the link text and colors with your data */}
-          <p className="text-2xl hover:text-gray-400 text-green-600">Team</p>
-        </Link>
-      </div>
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+            <div
+              className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+              onClick={() => setIsNavOpen(false)}
+            >
+              <svg
+                className="h-8 w-8 text-gray-600"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <Link
+                href="/events"
+                className="nav-item"
+                onClick={() => setIsNavOpen(false)}
+              >
 
-      {/* Mobile Menu Button */}
-      <button
-        className="lg:hidden block text-2xl text-gray-600 hover:text-gray-400 focus:outline-none"
-        onClick={toggleMenu} // Call toggleMenu on button click
-      >
-        <svg
-          className="w-6 h-6 fill-current"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-
-      {/* Collapsible Menu */}
-      {isMenuOpen && (
-        <div className="lg:hidden">
-          <ul className="py-2">
-            <li>
-              <Link href="/events">
-                {/* Replace the link text with your data */}
                 <p className="text-2xl hover:text-gray-400 text-red-400">
                   Events
                 </p>
               </Link>
-            </li>
-            <li>
-              <Link href="/gallery">
-                {/* Replace the link text with your data */}
+
+              <Link
+                href="/gallery"
+                className="nav-item"
+                onClick={() => setIsNavOpen(false)}
+              >
+
                 <p className="text-2xl hover:text-gray-400 text-blue-400">
                   Gallery
                 </p>
               </Link>
-            </li>
-            <li>
-              <Link href="/projects">
-                {/* Replace the link text with your data */}
+
+              <Link
+                href="/projects"
+                className="nav-item "
+                onClick={() => setIsNavOpen(false)}
+              >
+
                 <p className="text-2xl hover:text-gray-400 text-yellow-400">
                   Projects
                 </p>
               </Link>
-            </li>
-            <li>
-              <Link href="/team">
-                {/* Replace the link text with your data */}
-                <p className="text-2xl hover:text-gray-400 text-green-600">
+
+              <Link
+                href="/team"
+                className="nav-item "
+                onClick={() => setIsNavOpen(false)}
+              >
+                <p className="text-2xl hover:text-gray-400 text-green-400">
                   Team
                 </p>
               </Link>
-            </li>
-            {/* Add more links as needed */}
-          </ul>
+            </ul>
+          </div>
+        </section>
+        <div
+          className={
+            "justify-between items-center pr-3 w-1/3 hidden space-x-8 lg:flex"
+          }
+        >
+          <Link href="/events" className="nav-item">
+            <p className="text-2xl hover:text-gray-400 text-red-400">Events</p>
+          </Link>
+          <Link href="/gallery" className="nav-item">
+            <p className="text-2xl hover:text-gray-400 text-blue-400">
+              Gallery
+            </p>
+          </Link>
+          <Link href="/projects" className="nav-item">
+            <p className="text-2xl hover:text-gray-400 text-yellow-400">
+              Projects
+            </p>
+          </Link>
+          <Link href="/team" className="block">
+            <p className="text-2xl hover:text-gray-400 text-green-600">Team</p>
+          </Link>
         </div>
-      )}
+      </nav>
+      <style>{`
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    `}</style>
+
     </div>
   );
 };
-
 export default Navbar;
