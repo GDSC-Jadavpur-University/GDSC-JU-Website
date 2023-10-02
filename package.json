@@ -12,7 +12,8 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "next": "^13.5.3",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "autoprefixer": "latest",

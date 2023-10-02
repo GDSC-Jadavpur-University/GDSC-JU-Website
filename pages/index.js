@@ -11,16 +11,25 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-    <Head>
+      <Head>
         <title>GDSC Jadavpur University</title>
-        <meta name="description" content="Join the Google Developer Student Club Program to supercharge your technical skills and make a real impact! Open to all students, from beginners to experts, our club offers peer-to-peer learning, exciting events in web development, app development, competitive programming, machine learning, and more. Bridge the gap between theory and practice, grow your network, and access Google developer resources with us." />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    </Head>
-    <div className={quicksand.style}>
-      <Landing />
-      <Fields />
-    </div>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <meta
+          name="description"
+          content="Join the Google Developer Student Club Program to supercharge your technical skills and make a real impact! Open to all students, from beginners to experts, our club offers peer-to-peer learning, exciting events in web development, app development, competitive programming, machine learning, and more. Bridge the gap between theory and practice, grow your network, and access Google developer resources with us."
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+      </Head>
+      <div className={quicksand.className}>
+        <Landing />
+        <Fields />
+      </div>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
     </>
   );
 }
