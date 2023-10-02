@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-export default function Navbar({ fixed }) {
+const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <div className="flex items-center justify-between h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
@@ -120,4 +120,5 @@ export default function Navbar({ fixed }) {
     `}</style>
     </div>
   );
-}
+};
+export default Navbar;
