@@ -1,10 +1,6 @@
-
-
-
-
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from 'react'; // Import React useState hook
+import { useState } from "react"; // Import React useState hook
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false); // State to track menu visibility
@@ -22,13 +18,8 @@ const Navbar = () => {
         <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
       </Link>
 
-<<<<<<< HEAD
       {/* Display horizontal menu on large screens */}
       <div className="hidden lg:flex lg:justify-start items-center w-1/3 space-x-4">
-=======
-      {/* Nav Links */}
-      <div className="flex justify-between items-center w-1/3 md:hidden">
->>>>>>> 92d57c1d322eb1435d7fb77ff55c973b13620dd2
         <Link href="/events">
           {/* Replace the link text and colors with your data */}
           <p className="text-2xl hover:text-gray-400 text-red-400">Events</p>
@@ -39,7 +30,9 @@ const Navbar = () => {
         </Link>
         <Link href="/projects">
           {/* Replace the link text and colors with your data */}
-          <p className="text-2xl hover:text-gray-400 text-yellow-400">Projects</p>
+          <p className="text-2xl hover:text-gray-400 text-yellow-400">
+            Projects
+          </p>
         </Link>
         <Link href="/team">
           {/* Replace the link text and colors with your data */}
@@ -75,25 +68,33 @@ const Navbar = () => {
             <li>
               <Link href="/events">
                 {/* Replace the link text with your data */}
-                <p className="text-2xl hover:text-gray-400 text-red-400">Events</p>
+                <p className="text-2xl hover:text-gray-400 text-red-400">
+                  Events
+                </p>
               </Link>
             </li>
             <li>
               <Link href="/gallery">
                 {/* Replace the link text with your data */}
-                <p className="text-2xl hover:text-gray-400 text-blue-400">Gallery</p>
+                <p className="text-2xl hover:text-gray-400 text-blue-400">
+                  Gallery
+                </p>
               </Link>
             </li>
             <li>
               <Link href="/projects">
                 {/* Replace the link text with your data */}
-                <p className="text-2xl hover:text-gray-400 text-yellow-400">Projects</p>
+                <p className="text-2xl hover:text-gray-400 text-yellow-400">
+                  Projects
+                </p>
               </Link>
             </li>
             <li>
               <Link href="/team">
                 {/* Replace the link text with your data */}
-                <p className="text-2xl hover:text-gray-400 text-green-600">Team</p>
+                <p className="text-2xl hover:text-gray-400 text-green-600">
+                  Team
+                </p>
               </Link>
             </li>
             {/* Add more links as needed */}
@@ -105,4 +106,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
