@@ -4,12 +4,17 @@ import Image from "next/image";
 function Fields() {
   return (
     <div className="md:px-5 w-[95%] lg:w-[90%] relative mx-auto lg:mt-20 md:mt-[100px]">
-      <p className="text-2xl     font-semibold text-center">FIELDS WE  WORK IN</p>
+      <p className="text-2xl md:text-4xl font-semibold text-center my-5">
+        What We Do
+      </p>
+
       {/* Web Development */}
       <div className="grid grid-cols-2 mx-auto  grid-col my-5  gap-5 md:grid-cols-1 items-center py-5">
         <div className="w-10/12 ">
-          <p className="font-semibold text-6xl  md:text-xl lg:mb-5">Development</p>
-          <p>
+          <p className="font-semibold text-6xl md:text-xl lg:mb-5">
+            Development
+          </p>
+          <p className="text-lg">
             Development is the process of creating and maintaining software and
             computer programs. Dev encompasses everything from coding, to
             maintenance to debugging. The open source community is one of the
@@ -27,8 +32,10 @@ function Fields() {
           <Image src="/dsacp-image.png" width={400} height={400} alt="" />
         </div>
         <div className="w-10/12 ">
-          <p className="font-semibold md:text-xl text-6xl lg:mb-5">DSA And CP</p>
-          <p>
+          <p className="font-semibold md:text-xl text-6xl lg:mb-5">
+            DSA And CP
+          </p>
+          <p className="text-lg">
             DSA (Data Structures and Algorithms) is the study of organizing and
             manipulating data efficiently to perform complex computations
             Competitive programming is a sport of coding where individuals or
@@ -41,8 +48,10 @@ function Fields() {
       {/* Machine Learning */}
       <div className="grid grid-cols-2 md:grid-cols-1 gap-5  items-center py-5">
         <div className="w-10/12">
-          <p className="font-semibold text-6xl md:text-xl lg:mb-5">Machine Learning</p>
-          <p>
+          <p className="font-semibold text-6xl md:text-xl lg:mb-5">
+            Machine Learning
+          </p>
+          <p className="text-lg">
             Machine learning is a sub domain of artificial intelligence that
             lets computers learn from data and make predictions or decisions for
             newer datasets. It involves using algorithms to analyze corelations,
