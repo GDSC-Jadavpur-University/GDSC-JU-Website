@@ -3,14 +3,21 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Landing() {
   return (
+
     <div className="px-20 h-[90vh] flex justify-center items-center">
+
 
       {/* Landing text */}
       <div className="flex justify-center items-center">
         <div className="w-4/5 flex justify-center flex-col">
-          <p className="font-semibold text-5xl mb-10">
+          <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
             DEVELOPER STUDENT CLUBS <br />{" "}
-            <strong className="font-bold">Jadavpur University</strong>
+            <strong className="font-bold">
+              <span className="text-red-400">Ja</span>
+              <span className="text-blue-400">da</span >
+              <span className="text-yellow-400">vp</span>
+              <span className="text-green-600">ur</span> 
+              &nbsp; University</strong>
           </p>
           <p className="text-1xl">
             The Google Developer Student Club program is a program for
@@ -28,6 +35,7 @@ function Landing() {
             build their professional and personal networks and get access to
             google developer resources. Atanu Nayak.
           </p>
+
           <a 
             className="w-24 mt-5 bg-transparent text-center hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full" 
             href="https://developers.google.com/community/gdsc"
@@ -35,13 +43,14 @@ function Landing() {
           >
             Info
           </a>
+
         </div>
 
         {/* Landing Image/Animation */}
         <div>
           <Player
             src="https://lottie.host/b7fcc177-9bcd-41d7-bb12-349512dc7a9f/lzngOsKudE.json"
-            className="player"
+            className="player md:hidden"
             loop
             autoplay
           />

@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next",
     "lint": "next lint"
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
-    "next": "latest",
+    "next": "^13.5.3",
     "react": "latest",
     "react-dom": "latest"
   },
@@ -20,5 +20,9 @@
     "eslint-config-next": "latest",
     "postcss": "latest",
     "tailwindcss": "latest"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC"
 }
