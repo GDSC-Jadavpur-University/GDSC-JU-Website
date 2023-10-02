@@ -17,9 +17,9 @@ export default function Navbar({ fixed }) {
       </Link>
       {/* Nav Links */}
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden">
+        <section className="flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
