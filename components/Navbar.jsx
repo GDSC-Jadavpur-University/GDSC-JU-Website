@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import { useState } from "react";
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 

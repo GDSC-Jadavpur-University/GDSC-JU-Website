@@ -3,7 +3,10 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Landing() {
   return (
+
     <div className="px-20 h-[90vh] flex justify-center items-center">
+
+
       {/* Landing text */}
       <div className="flex justify-center items-center">
         <div className="w-4/5 flex justify-center flex-col">
@@ -11,36 +14,36 @@ function Landing() {
             DEVELOPER STUDENT CLUBS <br />{" "}
             <strong className="font-bold">
               <span className="text-red-400">Ja</span>
-              <span className="text-blue-400">da</span>
+              <span className="text-blue-400">da</span >
               <span className="text-yellow-400">vp</span>
-              <span className="text-green-600">ur</span>
-              &nbsp; University
-            </strong>
+              <span className="text-green-600">ur</span> 
+              &nbsp; University</strong>
           </p>
           <p className="text-1xl">
             The Google Developer Student Club program is a program for
             university students, designed to help them build their technical
             skills and knowledge and ultimately apply these skills practically
             to build solutions and solve real world problems for local
-            businesses and communities. <br /> It is open to any student,
-            ranging from novice developers who are just starting, to advanced
-            developers who want to further improve their skills. It is a space
-            for students to learn and collaborate in a peer-to-peer learning
-            environment. The GDSC will host events regarding the fields of web
-            development, app development, competitive programming, machine
-            learning, DSA and more. The aim of the club is to help students to
-            bridge the gap between theory and practice, along with this - the
-            students can build their professional and personal networks and get
-            access to google developer resources. Atanu Nayak.
+            businesses and communities. <br /> It is open to any student, ranging from
+            novice developers who are just starting, to advanced developers who
+            want to further improve their skills. It is a space for students to
+            learn and collaborate in a peer-to-peer learning environment. The
+            GDSC will host events regarding the fields of web development, app
+            development, competitive programming, machine learning, DSA and
+            more. The aim of the club is to help students to bridge the gap
+            between theory and practice, along with this - the students can
+            build their professional and personal networks and get access to
+            google developer resources. Atanu Nayak.
           </p>
 
-          <a
-            className="w-24 mt-5 bg-transparent text-center hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full"
+          <a 
+            className="w-24 mt-5 bg-transparent text-center hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded-full" 
             href="https://developers.google.com/community/gdsc"
             target="_blank"
           >
             Info
           </a>
+
         </div>
 
         {/* Landing Image/Animation */}
