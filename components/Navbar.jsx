@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { useState } from "react";
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
-    <div className="flex items-center justify-between h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
+    <div className="flex flex-col lg:flex-row items-center justify-between h-auto lg:h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
       {/* Logo Image */}
       <Link href="/">
+
         <Image
           src="/gdsc.png"
           width={300}
@@ -51,28 +54,34 @@ const Navbar = () => {
                 className="nav-item"
                 onClick={() => setIsNavOpen(false)}
               >
+
                 <p className="text-2xl hover:text-gray-400 text-red-400">
                   Events
                 </p>
               </Link>
+
               <Link
                 href="/gallery"
                 className="nav-item"
                 onClick={() => setIsNavOpen(false)}
               >
+
                 <p className="text-2xl hover:text-gray-400 text-blue-400">
                   Gallery
                 </p>
               </Link>
+
               <Link
                 href="/projects"
                 className="nav-item "
                 onClick={() => setIsNavOpen(false)}
               >
+
                 <p className="text-2xl hover:text-gray-400 text-yellow-400">
                   Projects
                 </p>
               </Link>
+
               <Link
                 href="/team"
                 className="nav-item "
@@ -127,6 +136,7 @@ const Navbar = () => {
         align-items: center;
       }
     `}</style>
+
     </div>
   );
 };
