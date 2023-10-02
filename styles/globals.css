@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700,800");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,4 +29,16 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.484);
   border-radius: 10px;
+}
+
+.fontDosis {
+  font-family: 'Dosis', sans-serif, 
+               'Helvetica Neue', sans-serif,
+               'Arial', sans-serif;
+}
+
+.strikeThru{
+  content: "";
+  border-bottom: 3px solid #ffbb39;
+  @apply absolute w-full top-[43%] left-0
 }
