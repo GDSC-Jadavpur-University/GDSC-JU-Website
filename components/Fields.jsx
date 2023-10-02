@@ -3,12 +3,12 @@ import Image from "next/image";
 
 function Fields() {
   return (
-    <div className="p-20 relative mx-auto">
-      <p className="text-6xl font-semibold text-center">FIELDS WE WORK IN</p>
+    <div className="md:px-5 w-[95%] lg:w-[90%] relative mx-auto lg:mt-20 md:mt-[100px]">
+      <p className="text-2xl     font-semibold text-center">FIELDS WE  WORK IN</p>
       {/* Web Development */}
-      <div className="grid grid-cols-2 items-center py-5">
-        <div className="w-10/12">
-          <p className="font-semibold text-6xl mb-5">Development</p>
+      <div className="grid grid-cols-2 mx-auto  grid-col my-5  gap-5 md:grid-cols-1 items-center py-5">
+        <div className="w-10/12 ">
+          <p className="font-semibold text-6xl  md:text-xl lg:mb-5">Development</p>
           <p>
             Development is the process of creating and maintaining software and
             computer programs. Dev encompasses everything from coding, to
@@ -16,18 +16,18 @@ function Fields() {
             most popular &quot;developer&quot; communities
           </p>
         </div>
-        <div>
+        <div className="mx-auto">
           <Image src="/webdev-image.png" width={400} height={400} alt="" />
         </div>
       </div>
 
       {/* DSA AND CP */}
-      <div className="grid grid-cols-2 items-center py-5 bg-gray-100">
-        <div>
+      <div className="grid grid-cols-2 gap-4 my-5  md:grid-cols-1 md:p-2 items-center py-5 bg-gray-100">
+        <div className="md:mx-auto">
           <Image src="/dsacp-image.png" width={400} height={400} alt="" />
         </div>
-        <div className="w-10/12">
-          <p className="font-semibold text-6xl mb-5">DSA And CP</p>
+        <div className="w-10/12 ">
+          <p className="font-semibold md:text-xl text-6xl lg:mb-5">DSA And CP</p>
           <p>
             DSA (Data Structures and Algorithms) is the study of organizing and
             manipulating data efficiently to perform complex computations
@@ -39,9 +39,9 @@ function Fields() {
       </div>
 
       {/* Machine Learning */}
-      <div className="grid grid-cols-2 items-center py-5">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-5  items-center py-5">
         <div className="w-10/12">
-          <p className="font-semibold text-6xl mb-5">Machine Learning</p>
+          <p className="font-semibold text-6xl md:text-xl lg:mb-5">Machine Learning</p>
           <p>
             Machine learning is a sub domain of artificial intelligence that
             lets computers learn from data and make predictions or decisions for
@@ -51,7 +51,7 @@ function Fields() {
             bioinformatics.
           </p>
         </div>
-        <div>
+        <div className="mx-auto">
           <Image src="/ml-image.png" width={400} height={400} alt="" />
         </div>
       </div>

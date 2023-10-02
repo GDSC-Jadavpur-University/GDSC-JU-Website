@@ -3,12 +3,12 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Landing() {
   return (
-    <div className="px-20 h-[90vh] flex justify-center items-center">
+    <div className=" mt-5 w-[95%] mx-auto h-[100%] flex justify-center items-center">
       
       {/* Landing text */}
       <div className="flex justify-center items-center">
         <div className="w-4/5 flex justify-center flex-col">
-          <p className="font-semibold text-5xl mb-10 leading-[4.8rem]">
+          <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
             DEVELOPER STUDENT CLUBS <br />{" "}
             <strong className="font-bold">
               <span className="text-red-400">Ja</span>
