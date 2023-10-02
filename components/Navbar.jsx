@@ -10,7 +10,7 @@ const Navbar = () => {
       </Link>
 
       {/* Nav Links */}
-      <div className="flex justify-between items-center w-1/3">
+      <div className="flex justify-between items-center w-1/3 md:hidden">
         <Link href="/events">
           <p className="text-2xl hover:text-gray-400 text-red-400">Events</p>
         </Link>
