@@ -9,9 +9,9 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-
+  // flex items-center justify-between h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between h-auto lg:h-20 px-11 top-0 z-10 sticky mx-auto bg-gray-100 backdrop-blur-sm">
+    <div className="flex flex-col lg:flex-row items-center justify-between h-auto lg:h-20 px-11 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
       {/* Logo Image */}
       <Link href="/">
         {/* Replace the source and alt text with your logo */}
