@@ -73,6 +73,15 @@ const Navbar = () => {
                   Projects
                 </p>
               </Link>
+              <Link
+                href="/team"
+                className="nav-item "
+                onClick={() => setIsNavOpen(false)}
+              >
+                <p className="text-2xl hover:text-gray-400 text-green-400">
+                  Team
+                </p>
+              </Link>
             </ul>
           </div>
         </section>
