@@ -13,7 +13,7 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/Core Team/anurag_jha.jpg",
         },
         {
-          name: "Arya Pandit",
+          name: "Ayush Pandit",
           designation: "Dev Lead",
           imageSrc: "/TeamImages/Core Team/ayush_pandit_4WShbLz.jpg",
         },
