@@ -31,7 +31,7 @@ function About() {
       </p>
       <div className="flex justify-center my-5">
         {MapData.map((data) => (
-          <div className="mx-5">
+          <div className="mx-5" key={data.name}>
             <h1 className="font-bold my-5 text-2xl">{data.name}</h1>
             <iframe
               className="w-96 h-96"
