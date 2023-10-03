@@ -10,10 +10,6 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
   const NavData = [
     {
       name: "Events",
@@ -57,31 +53,39 @@ const Navbar = () => {
       <div className="lg:hidden">
         <button onClick={toggleMenu}>
           {isMenuOpen ? (
-            <FaTimes className="text-3xl text-gray-600" />
+            <FaTimes
+              className={`text-3xl text-gray-600 ${
+                isMenuOpen ? "hidden" : "flex"
+              } `}
+            />
           ) : (
             <FaBars className="text-3xl text-gray-600" />
           )}
         </button>
       </div>
       {isMenuOpen && (
-        <div className="lg:hidden flex flex-col items-center justify-center w-full h-screen bg-gray-800 bg-opacity-90 fixed top-0 left-0 z-50">
+        <div
+          className={`lg:hidden flex flex-col items-center justify-center w-full h-screen bg-gray-800 bg-opacity-90 fixed top-0 left-0 z-50`}
+        >
           {NavData.map((item, index) => (
             <Link
               href={item.link}
               key={index}
-              onClick={closeMenu}
               className="w-full flex justify-center items-center p-10"
             >
               <p
                 className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
-                onClick={closeMenu}
+                // onClick={closeMenu}
               >
                 {item.name}
               </p>
             </Link>
           ))}
           {/* close button */}
-          <button onClick={closeMenu}>
+          <button
+            onClick={toggleMenu}
+            className="absolute top-0 right-0 pr-10 pt-10"
+          >
             <FaTimes className="text-3xl text-white" />
           </button>
         </div>
