@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -42,16 +43,21 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
       </Link>
-      <div className="hidden lg:flex lg:justify-start items-center w-1/3 space-x-4">
-        {NavData.map((item, index) => (
-          <Link href={item.link} key={index}>
-            <p
-              className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
-            >
-              {item.name}
-            </p>
-          </Link>
-        ))}
+      <div className="hidden  lg:flex lg:justify-between items-center w-full space-x-4">
+        <div className="hidden lg:flex lg:justify-start items-center w-1/3 space-x-4">
+          {NavData.map((item, index) => (
+            <Link href={item.link} key={index}>
+              <p
+                className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
+              >
+                {item.name}
+              </p>
+            </Link>
+          ))}
+        </div>
+        <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4">
+          <ThemeSwitcher />
+        </div>
       </div>
 
       <div className="lg:hidden">
