@@ -1,4 +1,13 @@
 import React from "react";
+import Link from "next/link";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaYoutube,
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 
 function Footer() {
@@ -240,6 +249,7 @@ function Footer() {
   </div>
 </footer>
 );
+
 }
 
 export default Footer;
