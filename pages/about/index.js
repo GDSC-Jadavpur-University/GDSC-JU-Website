@@ -9,7 +9,7 @@ function About() {
 The Google Developer Student Club program is a program for university students, designed to help them build their technical skills and knowledge and ultimately apply these skills practically to build solutions and solve real world problems for local businesses and communities.
 
 It is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further improve their skills. It is a space for students to learn and collaborate in a peer-to-peer learning environment. The GDSC will host events regarding the fields of web development, app development, competitive programming, machine learning, DSA and more. The aim of the club is to help students to bridge the gap between theory and practice, along with this - the students can build their professional and personal networks and get access to google developer resources.</p>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center" ,flexWrap:"wrap" }}>
         <div style={{ border: "1px solid black", width: "320px", height: "200px", padding: "10px", margin: "10px", borderRadius: "10px" }}>
           <div>
             <h2>Jadavpur University</h2>
