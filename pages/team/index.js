@@ -19,7 +19,7 @@ const TeamsPage = () => {
         },
         {
           name: "Akancha Singh",
-          designation: "Events Team",
+          designation: "Events Lead",
           imageSrc: "/TeamImages/Core Team/akankcha_singh_vo1kvKT.jpg",
         },
         {
@@ -53,6 +53,10 @@ const TeamsPage = () => {
       name: "Dev Team",
       folder: "Dev Team",
       members: [
+        {
+          name: "Aditya Mayukh Som",
+          imageSrc: "/TeamImages/Dev Team/Aditya_MayukhSom_DevTeam.jpg",
+        },
         {
           name: "Arka Dutta",
           imageSrc: "/TeamImages/Dev Team/Arka_Dutta_DevTeam.jpg",
@@ -104,6 +108,10 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/ML Team/Sheetali_Maity_ML_Team.jpg",
         },
         {
+          name: "Soumyadipto Pal",
+          imageSrc: "/TeamImages/ML Team/Soumyadipto_Pal_ML_Team.jpg",
+        },
+        {
           name: "Srijit Das",
           imageSrc: "/TeamImages/ML Team/Srijit_Das_ML_Team.jpg",
         },
@@ -133,6 +141,7 @@ const TeamsPage = () => {
           name: "Gaurav Bose ",
           imageSrc: "/TeamImages/Events Team/Gaurav_Bose_EventsTeam.jpg",
         },
+        
         {
           name: "Piyush Gupta ",
           imageSrc: "/TeamImages/Events Team/Piyush_Gupta_EventsTeam.jpg",
@@ -140,6 +149,14 @@ const TeamsPage = () => {
         {
           name: "Rajat Subhra Chowdury",
           imageSrc: "/TeamImages/Events Team/Rajat_subhra_chowdhury.jpeg",
+        },
+        {
+          name: "Surjayan Kar ",
+          imageSrc: "/TeamImages/Events Team/Surjayan_Kar_EventsTeam.jpg",
+        },
+        {
+          name: "Tarpan Roy ",
+          imageSrc: "/TeamImages/Events Team/Tarpan_Roy_EventsTeam.jpg",
         },
       ],
     },
