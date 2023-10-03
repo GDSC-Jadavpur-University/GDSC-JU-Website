@@ -9,6 +9,8 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
+import { ThemeSwitcher } from "./ThemeSwitcher";
+
 function Footer() {
   const socials = [
     {
@@ -102,6 +104,9 @@ function Footer() {
             </a>
           ))}
         </div>
+      </div>
+      <div className="flex justify-end mr-20">
+        <ThemeSwitcher />
       </div>
     </footer>
   );
