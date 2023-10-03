@@ -18,9 +18,19 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/Core Team/ayush_pandit_4WShbLz.jpg",
         },
         {
+          name: "Atanu Nayak",
+          designation: "Dev Lead",
+          imageSrc: "/TeamImages/Core Team/Atanu Nayak.jpeg",
+        },
+        {
           name: "Akancha Singh",
-          designation: "Events Team",
+          designation: "Events Lead",
           imageSrc: "/TeamImages/Core Team/akankcha_singh_vo1kvKT.jpg",
+        },
+        {
+          name: "Jyotishman Sarkar",
+          designation: "Events Lead",
+          imageSrc: "/TeamImages/Core Team/Jyotisman _Sarkar.jpeg",
         },
         {
           name: "Upayan De",
@@ -29,8 +39,13 @@ const TeamsPage = () => {
         },
         {
           name: "Vikash Sangai",
-          designation: "CP/DSA Co-Lead",
+          designation: "CP/DSA Lead",
           imageSrc: "/TeamImages/Core Team/vikash_sangai_UWkdSc0.jpeg",
+        },
+        {
+          name: "Anupam Ghosh",
+          designation: "CP/DSA Lead",
+          imageSrc: "/TeamImages/Core Team/Anupam_Ghosh.jpeg",
         },
         {
           name: "Debabrata Mondal",
@@ -38,15 +53,31 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/Core Team/debabrata_mondal.jpg",
         },
         {
+          name: "Siddharth Banerjee",
+          designation: "Content Lead",
+          imageSrc: "/TeamImages/Core Team/Siddharth_Banerjee.jpg",
+        },
+        {
           name: "Om Mittal",
           designation: "ML Lead",
-          imageSrc: "/TeamImages/Core Team/om_mittal_VFuwfCV.jpg",
+          imageSrc: "/TeamImages/Core Team/Om_Mittal.jpeg",
+        },
+        {
+          name: "Aryan Paul",
+          designation: "ML Lead",
+          imageSrc: "/TeamImages/Core Team/Aryan Paul.jpeg",
         },
         {
           name: "Somoprovo Bhattacharjee",
           designation: "Design Lead",
-          imageSrc: "/TeamImages/Core Team/Somoprovo Bhattacharjee.jpeg",
+          imageSrc: "/TeamImages/Core Team/Somoprovo_Bhattacharjee.jpeg",
         },
+        {
+          name: "Arin Roy",
+          designation: "Design Lead",
+          imageSrc: "/TeamImages/Core Team/ArinRay.jpeg",
+        },
+        
       ],
     },
     {
@@ -58,6 +89,10 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/Dev Team/Arka_Dutta_DevTeam.jpg",
         },
         {
+          name: "Aditya Mayukh Som",
+          imageSrc: "/TeamImages/Dev Team/Aditya_Mayukh_Som.jpg",
+        },
+        {
           name: "Ayantik Bhaumik",
           imageSrc: "/TeamImages/Dev Team/Ayantik_Bhaumik_DevTeam.jpeg",
         },
@@ -66,7 +101,7 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/Dev Team/Bhavesh_Agarwal_DevTeam.jpg",
         },
         {
-          name: "Sayan Saha",
+          name: "Sayan Kumar Sah",
           imageSrc: "/TeamImages/Dev Team/Sayan_Sah_DevTeam.jpg",
         },
         {
@@ -87,10 +122,7 @@ const TeamsPage = () => {
       name: "ML Team",
       folder: "ML Team",
       members: [
-        {
-          name: "Dipan Mondal",
-          imageSrc: "/TeamImages/ML Team/Dipan_Mondal_ML_Team.jpg",
-        },
+        
         {
           name: "Parthiv Sarkar",
           imageSrc: "/TeamImages/ML Team/Parthiv_Sarkar_ML_Team.jpeg",
@@ -110,6 +142,14 @@ const TeamsPage = () => {
         {
           name: "Srinjoy Dutta",
           imageSrc: "/TeamImages/ML Team/Srinjoy_Dutta_ML_Team.jpg",
+        },
+        {
+          name: "Soumyadipto Pal",
+          imageSrc: "/TeamImages/ML Team/Soumyadipto_Pal_ML_Team.jpg",
+        },
+        {
+          name: "Dipan Mondal",
+          imageSrc: "/TeamImages/ML Team/Dipan_Mondal_ML_Team.jpg",
         },
       ],
     },
@@ -141,6 +181,18 @@ const TeamsPage = () => {
           name: "Rajat Subhra Chowdury",
           imageSrc: "/TeamImages/Events Team/Rajat_subhra_chowdhury.jpeg",
         },
+        {
+          name: "Surjayan Kar",
+          imageSrc: "/TeamImages/Events Team/Surjayan_Kar_EventsTeam.jpg",
+        },
+        {
+          name: "Tarpan Roy",
+          imageSrc: "/TeamImages/Events Team/Tarpan_Roy_Eventsteam.jpg",
+        },
+        
+
+        
+
       ],
     },
     {
