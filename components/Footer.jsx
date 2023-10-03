@@ -9,6 +9,8 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
+import { ThemeSwitcher } from "./ThemeSwitcher";
+
 function Footer() {
   const socials = [
     {
@@ -75,11 +77,11 @@ function Footer() {
   return (
     <footer className="w-full bg-gray-100 py-8">
       {/* Row with links */}
-      <div className="w-full container mx-auto px-8">
-        <div className="flex flex-col sm:flex-row justify-center pt-6 sm:pt-8">
+      <div className="w-full flex flex-col sm:flex-row justify-center">
+        <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-1/2">
           {footerData.map((item, index) => (
             <Link href={item.link} key={index}>
-              <p className="text-black hover:text-purple-600 px-4">
+              <p className="text-gray-600 text-xl font-semibold hover:text-gray-400 mx-4 my-2">
                 {item.name}
               </p>
             </Link>
@@ -87,8 +89,10 @@ function Footer() {
         </div>
       </div>
       {/*  */}
+
       <div className="w-full container mx-auto px-8">
         <h5 className="text-xl text-center font-bold mb-2 sm:text-center xl:justify-center">
+
           Stay connected
         </h5>
         <div className="flex justify-center xl:justify-center">
@@ -102,6 +106,9 @@ function Footer() {
             </a>
           ))}
         </div>
+      </div>
+      <div className="flex justify-end mr-20">
+        <ThemeSwitcher />
       </div>
     </footer>
   );
