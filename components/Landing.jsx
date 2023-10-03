@@ -32,9 +32,11 @@ function Landing() {
           </p>
 
           <div className="w-4/5 flex justify-start items-center mt-10">
-            <button className="bg-red-400 text-white px-5 py-2 rounded-lg font-semibold text-lg">
+            <a href="https://gdsc.community.dev/jadavpur-university-kolkata/" target="_blank">
+              <button className="bg-red-400 text-white px-5 py-2 rounded-lg font-semibold text-lg">
               Join Us
-            </button>
+              </button>
+            </a>
             <button className="bg-gray-200 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
               Learn More
             </button>

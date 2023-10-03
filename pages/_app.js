@@ -3,6 +3,9 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 import Layout from "@/layout/Layout";
 import "@/styles/globals.css";
+import { Quicksand } from "next/font/google";
+
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
   return (
