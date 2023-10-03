@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin:"50px 20px"}}>
       <h1 style={{ fontWeight: "bold", fontSize: "36px", marginBottom: "20px" }}>About</h1>
-      <p style={{ textAlign: "center" }}>The Google Developer Student Club of Jadavpur University, JU. 
+      <p style={{ textAlign: "center",  marginBottom:"20px"}}>The Google Developer Student Club of Jadavpur University, JU. 
 
 The Google Developer Student Club program is a program for university students, designed to help them build their technical skills and knowledge and ultimately apply these skills practically to build solutions and solve real world problems for local businesses and communities.
 
