@@ -150,10 +150,6 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/ML Team/Srinjoy_Dutta_ML_Team.jpg",
         },
         {
-          name: "Soumyadipto Pal",
-          imageSrc: "/TeamImages/ML Team/Soumyadipto_Pal_ML_Team.jpg",
-        },
-        {
           name: "Dipan Mondal",
           imageSrc: "/TeamImages/ML Team/Dipan_Mondal_ML_Team.jpg",
         },
