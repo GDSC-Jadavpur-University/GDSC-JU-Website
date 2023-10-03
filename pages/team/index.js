@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image/";
+import { motion } from "framer-motion";
 
 const TeamsPage = () => {
   const teams = [
@@ -141,7 +142,7 @@ const TeamsPage = () => {
           name: "Gaurav Bose ",
           imageSrc: "/TeamImages/Events Team/Gaurav_Bose_EventsTeam.jpg",
         },
-        
+
         {
           name: "Piyush Gupta ",
           imageSrc: "/TeamImages/Events Team/Piyush_Gupta_EventsTeam.jpg",
@@ -253,6 +254,7 @@ const TeamGroup = ({ team }) => {
       {team.members.map((member, index) => (
         <TeamMember
           key={index}
+          index={index}
           name={member.name}
           designation={member.designation}
           imageSrc={member.imageSrc}
@@ -262,9 +264,20 @@ const TeamGroup = ({ team }) => {
   );
 };
 
-const TeamMember = ({ name, designation, imageSrc }) => {
+const TeamMember = ({ name, designation, imageSrc, index }) => {
   return (
-    <div className="flex flex-col items-center justify-center m-4">
+    <motion.div
+      className="flex flex-col items-center justify-center m-4"
+      initial={{ opacity: 0, y: 50, scale: 0 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.1,
+        type: "spring",
+        stiffness: 110,
+        delay: (index % 4) * 0.3,
+      }}
+    >
       <div className="w-40 h-40 relative">
         <Image
           src={imageSrc}
@@ -274,9 +287,22 @@ const TeamMember = ({ name, designation, imageSrc }) => {
           className="rounded-full"
         />
       </div>
-      <p className="text-gray-800 font-semibold dark:text-white">{name}</p>
+      <motion.p
+        className="text-gray-800 font-semibold dark:text-white"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.3,
+          type: "spring",
+          stiffness: 110,
+          delay: (index % 4) * 0.3 + 0.3,
+        }}
+      >
+        {name}
+      </motion.p>
       <p className="text-gray-600 dark:text-white">{designation}</p>
-    </div>
+    </motion.div>
   );
 };
 
