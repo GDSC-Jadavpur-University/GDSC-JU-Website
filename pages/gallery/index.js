@@ -23,7 +23,7 @@ function Gallery() {
         {teams.map((team, index) => (
           <motion.div
             key={index}
-            className="flex flex-col items-center justify-center m-4"
+            className="flex flex-col items-center justify-center m-4 shadow-2xl rounded-medium"
             initial={{ opacity: 0, y: 50, scale: 0 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}

@@ -78,7 +78,6 @@ const TeamsPage = () => {
           designation: "Design Lead",
           imageSrc: "/TeamImages/Core Team/ArinRay.jpeg",
         },
-        
       ],
     },
     {
@@ -93,7 +92,7 @@ const TeamsPage = () => {
           name: "Arka Dutta",
           imageSrc: "/TeamImages/Dev Team/Arka_Dutta_DevTeam.jpg",
         },
-        
+
         {
           name: "Ayantik Bhaumik",
           imageSrc: "/TeamImages/Dev Team/Ayantik_Bhaumik_DevTeam.jpeg",
@@ -124,7 +123,6 @@ const TeamsPage = () => {
       name: "ML Team",
       folder: "ML Team",
       members: [
-        
         {
           name: "Parthiv Sarkar",
           imageSrc: "/TeamImages/ML Team/Parthiv_Sarkar_ML_Team.jpeg",
@@ -308,8 +306,8 @@ const TeamMember = ({ name, designation, imageSrc, index }) => {
           src={imageSrc}
           alt={name}
           layout="fill"
+          className="rounded-full shadow-2xl object-cover"
           objectFit="cover"
-          className="rounded-full"
         />
       </div>
       <motion.p
