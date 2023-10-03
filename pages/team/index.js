@@ -87,16 +87,13 @@ const TeamsPage = () => {
       members: [
         {
           name: "Aditya Mayukh Som",
-          imageSrc: "/TeamImages/Dev Team/Aditya_MayukhSom_DevTeam.jpg",
+          imageSrc: "/TeamImages/Dev Team/aditya_mayukh.jpg",
         },
         {
           name: "Arka Dutta",
           imageSrc: "/TeamImages/Dev Team/Arka_Dutta_DevTeam.jpg",
         },
-        {
-          name: "Aditya Mayukh Som",
-          imageSrc: "/TeamImages/Dev Team/Aditya_Mayukh_Som.jpg",
-        },
+        
         {
           name: "Ayantik Bhaumik",
           imageSrc: "/TeamImages/Dev Team/Ayantik_Bhaumik_DevTeam.jpeg",
