@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: 100 100 100 auto }}>
       <h1 style={{ fontWeight: "bold", fontSize: "36px", marginBottom: "20px" }}>About</h1>
       <p style={{ textAlign: "center" }}>The Google Developer Student Club of Jadavpur University, JU. 
 
