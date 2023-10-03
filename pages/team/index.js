@@ -215,7 +215,7 @@ const TeamsPage = () => {
                 key={index}
                 className="flex flex-col items-center justify-center"
               >
-                <h1 className="text-3xl font-bold text-gray-800">
+                <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
                   {team.name}
                 </h1>
                 <div className="flex flex-wrap justify-center">
@@ -257,8 +257,8 @@ const TeamMember = ({ name, designation, imageSrc }) => {
           className="rounded-full"
         />
       </div>
-      <p className="text-gray-800 font-semibold">{name}</p>
-      <p className="text-gray-600">{designation}</p>
+      <p className="text-gray-800 font-semibold dark:text-white">{name}</p>
+      <p className="text-gray-600 dark:text-white">{designation}</p>
     </div>
   );
 };
