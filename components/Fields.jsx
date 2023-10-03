@@ -35,7 +35,7 @@ function Fields() {
           <p className="font-semibold md:text-xl text-6xl text-green-600 lg:mb-5">
             DSA And CP
           </p>
-          <p className="text-lg">
+          <p className="text-lg" text-black-600>
             DSA (Data Structures and Algorithms) is the study of organizing and
             manipulating data efficiently to perform complex computations
             Competitive programming is a sport of coding where individuals or
