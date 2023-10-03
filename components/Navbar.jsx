@@ -102,7 +102,7 @@ const Navbar = () => {
           {/* close button */}
           <button
             onClick={toggleMenu}
-            className="absolute top-0 right-0 pr-10 pt-10"
+            className="absolute top-0 right-0 pr-5 pt-5"
           >
             <FaTimes className="text-3xl text-white" />
           </button>
