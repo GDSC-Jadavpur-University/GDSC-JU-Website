@@ -75,7 +75,7 @@ function SubscriptionPage() {
     <div style={styles.subscriptionContainer}>
 
         <div style={styles.centeredImage}>
-        <img src="./subs.jpeg"  width={400} height={300} alt="Your Logo" />
+        <img src=""  width={400} height={300} alt="Your Logo" />
       </div>
 
         
@@ -101,4 +101,3 @@ function SubscriptionPage() {
 }
 
 export default SubscriptionPage;
-
