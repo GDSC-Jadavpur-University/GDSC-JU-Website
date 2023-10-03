@@ -28,7 +28,7 @@ function Events() {
               alignItems: "center",
             }}
           >
-            <Image
+            <img
               src="/Vivek Gupta Event.jpg"
               class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
               alt="Event 2"
