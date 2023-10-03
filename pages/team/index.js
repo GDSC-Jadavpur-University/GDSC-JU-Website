@@ -275,7 +275,7 @@ const TeamMember = ({ name, designation, imageSrc, index }) => {
         duration: 0.1,
         type: "spring",
         stiffness: 110,
-        delay: (index % 4) * 0.3,
+        delay: 0.1 * index,
       }}
     >
       <div className="w-40 h-40 relative">
@@ -296,7 +296,7 @@ const TeamMember = ({ name, designation, imageSrc, index }) => {
           duration: 0.3,
           type: "spring",
           stiffness: 110,
-          delay: (index % 4) * 0.3 + 0.3,
+          delay: 0.1 * index,
         }}
       >
         {name}
