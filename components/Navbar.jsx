@@ -17,6 +17,11 @@ const Navbar = () => {
 
   const NavData = [
     {
+      name: "About",
+      link: "/about",
+      color: "text-green-600",
+    },
+    {
       name: "Events",
       link: "/events",
       color: "text-red-400",
@@ -40,22 +45,29 @@ const Navbar = () => {
 
   return (
     <div className="flex lg:flex-row items-center justify-between border-b h-auto lg:h-20 px-5 py-5 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
+      {/* LOGO */}
       <Link href="/">
         <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
       </Link>
-      <div className="hidden lg:flex lg:justify-end items-center w-full space-x-4">
-        {NavData.map((item, index) => (
-          <Link href={item.link} key={index}>
-            <p
-              className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
-            >
-              {item.name}
-            </p>
-          </Link>
-        ))}
+      {/* NAV LINKS */}
+      <div className="hidden lg:flex lg:justify-center items-center w-full">
+        <div className="hidden lg:flex lg:justify-start items-center gap-5">
+          {NavData.map((item, index) => (
+            <Link href={item.link} key={index}>
+              <p
+                className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
+              >
+                {item.name}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </div>
+      {/* THEME SWITCHER */}
+      {/* <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4"> */}
+      <div className="flex justify-center items-center w-1/3 space-x-4">
         <ThemeSwitcher />
       </div>
-
       <div className="lg:hidden">
         <button onClick={toggleMenu}>
           {isMenuOpen ? (
@@ -70,7 +82,9 @@ const Navbar = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className={`lg:hidden flex flex-col items-center justify-center w-full h-screen bg-gray-800 bg-opacity-90 fixed top-0 left-0 z-50`}>
+        <div
+          className={`lg:hidden flex flex-col items-center justify-center w-full h-screen bg-gray-800 bg-opacity-90 fixed top-0 left-0 z-50`}
+        >
           {NavData.map((item, index) => (
             <Link
               href={item.link}
@@ -85,8 +99,11 @@ const Navbar = () => {
               </p>
             </Link>
           ))}
-          {/* Close button */}
-          <button onClick={toggleMenu} className="absolute top-0 right-0 pr-10 pt-10">
+          {/* close button */}
+          <button
+            onClick={toggleMenu}
+            className="absolute top-0 right-0 pr-10 pt-10"
+          >
             <FaTimes className="text-3xl text-white" />
           </button>
         </div>
