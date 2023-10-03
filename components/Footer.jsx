@@ -88,7 +88,7 @@ function Footer() {
       </div>
       {/*  */}
       <div className="w-full container mx-auto px-8">
-        <h5 className="text-xl text-center font-bold mb-6 sm:text-center xl:text-left">
+        <h5 className="text-xl text-center font-bold mb-6 sm:text-center xl:justify-center">
           Stay connected
         </h5>
         <div className="flex justify-center xl:justify-center">
