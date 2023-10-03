@@ -27,7 +27,7 @@ function Fields() {
       </div>
 
       {/* DSA AND CP */}
-      <div className="grid grid-cols-2 gap-4 my-5  md:grid-cols-1 md:p-2 items-center py-5 bg-gray-100">
+      <div className="grid grid-cols-2 gap-4 my-5 rounded-md shadow-md md:grid-cols-1 md:p-2 items-center py-5 bg-slate-200 dark:bg-slate-800">
         <div className="md:mx-auto">
           <Image src="/dsacp-image.png" width={400} height={400} alt="" />
         </div>
@@ -35,7 +35,7 @@ function Fields() {
           <p className="font-semibold md:text-xl text-6xl text-green-600 lg:mb-5">
             DSA And CP
           </p>
-          <p className="text-lg dark:text-black">
+          <p className="text-lg dark:text-white">
             DSA (Data Structures and Algorithms) is the study of organizing and
             manipulating data efficiently to perform complex computations
             Competitive programming is a sport of coding where individuals or
