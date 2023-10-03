@@ -50,8 +50,8 @@ const Navbar = () => {
         <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
       </Link>
       {/* NAV LINKS */}
-      <div className="bg-red-300 hidden lg:flex lg:justify-center items-center w-full">
-        <div className="bg-blue-300 hidden lg:flex lg:justify-start items-center gap-5">
+      <div className="hidden lg:flex lg:justify-center items-center w-full">
+        <div className="hidden lg:flex lg:justify-start items-center gap-5">
           {NavData.map((item, index) => (
             <Link href={item.link} key={index}>
               <p
