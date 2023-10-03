@@ -37,9 +37,11 @@ function Landing() {
               Join Us
               </button>
             </a>
-            <button className="bg-gray-200 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
-              Learn More
-            </button>
+            <a href="https://developers.google.com/community/gdsc" target="_blank">
+              <button className="bg-gray-200 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
+                Learn More
+              </button>
+            </a>
           </div>
         </div>
         <div>
