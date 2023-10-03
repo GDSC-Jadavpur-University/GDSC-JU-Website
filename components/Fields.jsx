@@ -4,14 +4,14 @@ import Image from "next/image";
 function Fields() {
   return (
     <div className="md:px-5 w-[95%] lg:w-[90%] relative mx-auto lg:mt-20 md:mt-[100px]">
-      <p className="text-2xl md:text-4xl font-semibold text-center my-5">
+      <p className="text-6xl md:text-4xl font-semibold text-center my-5">
         What We Do
       </p>
 
       {/* Web Development */}
       <div className="grid grid-cols-2 mx-auto  grid-col my-5  gap-5 md:grid-cols-1 items-center py-5">
         <div className="w-10/12 ">
-          <p className="font-semibold text-6xl md:text-xl lg:mb-5">
+          <p className="font-semibold text-6xl text-red-600 md:text-xl lg:mb-5">
             Development
           </p>
           <p className="text-lg">
@@ -32,7 +32,7 @@ function Fields() {
           <Image src="/dsacp-image.png" width={400} height={400} alt="" />
         </div>
         <div className="w-10/12 ">
-          <p className="font-semibold md:text-xl text-6xl lg:mb-5">
+          <p className="font-semibold md:text-xl text-6xl text-green-600 lg:mb-5">
             DSA And CP
           </p>
           <p className="text-lg">
@@ -48,7 +48,7 @@ function Fields() {
       {/* Machine Learning */}
       <div className="grid grid-cols-2 md:grid-cols-1 gap-5  items-center py-5">
         <div className="w-10/12">
-          <p className="font-semibold text-6xl md:text-xl lg:mb-5">
+          <p className="font-semibold text-6xl text-blue-600 md:text-xl lg:mb-5">
             Machine Learning
           </p>
           <p className="text-lg">
