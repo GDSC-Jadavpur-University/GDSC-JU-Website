@@ -45,7 +45,7 @@ function Footer() {
     },
     {
       name: "Github",
-      link: "",
+      link: "https://github.com/GDSC-Jadavpur-University/",
       icon: <FaGithub />,
       hoverColor: "hover:text-black",
     },
