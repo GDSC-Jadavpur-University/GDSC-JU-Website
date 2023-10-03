@@ -78,7 +78,7 @@ function Footer() {
       <div className="w-full flex flex-col sm:flex-row justify-center">
         <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-1/2">
           {footerData.map((item, index) => (
-            <Link href={item.link} key={index}>
+            <Link href={item.link} key={index} target="_blank" >
               <p className="text-gray-600 text-xl font-semibold hover:text-gray-400 mx-4 my-2">
                 {item.name}
               </p>
@@ -96,6 +96,7 @@ function Footer() {
             <a
               href={social.link}
               key={index}
+              target="_blank"
               className={`text-gray-600 ${social.hoverColor} text-3xl mr-4`}
             >
               {social.icon}
