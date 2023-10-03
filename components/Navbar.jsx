@@ -64,7 +64,8 @@ const Navbar = () => {
         </div>
       </div>
       {/* THEME SWITCHER */}
-      <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4">
+      {/* <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4"> */}
+      <div className="flex justify-center items-center w-1/3 space-x-4">
         <ThemeSwitcher />
       </div>
       <div className="lg:hidden">
