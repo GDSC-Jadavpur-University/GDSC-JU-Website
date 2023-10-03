@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image/";
+import { motion } from "framer-motion";
 
 const TeamsPage = () => {
   const teams = [
@@ -85,6 +86,10 @@ const TeamsPage = () => {
       folder: "Dev Team",
       members: [
         {
+          name: "Aditya Mayukh Som",
+          imageSrc: "/TeamImages/Dev Team/Aditya_MayukhSom_DevTeam.jpg",
+        },
+        {
           name: "Arka Dutta",
           imageSrc: "/TeamImages/Dev Team/Arka_Dutta_DevTeam.jpg",
         },
@@ -136,6 +141,10 @@ const TeamsPage = () => {
           imageSrc: "/TeamImages/ML Team/Sheetali_Maity_ML_Team.jpg",
         },
         {
+          name: "Soumyadipto Pal",
+          imageSrc: "/TeamImages/ML Team/Soumyadipto_Pal_ML_Team.jpg",
+        },
+        {
           name: "Srijit Das",
           imageSrc: "/TeamImages/ML Team/Srijit_Das_ML_Team.jpg",
         },
@@ -173,6 +182,7 @@ const TeamsPage = () => {
           name: "Gaurav Bose ",
           imageSrc: "/TeamImages/Events Team/Gaurav_Bose_EventsTeam.jpg",
         },
+
         {
           name: "Piyush Gupta ",
           imageSrc: "/TeamImages/Events Team/Piyush_Gupta_EventsTeam.jpg",
@@ -181,18 +191,6 @@ const TeamsPage = () => {
           name: "Rajat Subhra Chowdury",
           imageSrc: "/TeamImages/Events Team/Rajat_subhra_chowdhury.jpeg",
         },
-        {
-          name: "Surjayan Kar",
-          imageSrc: "/TeamImages/Events Team/Surjayan_Kar_EventsTeam.jpg",
-        },
-        {
-          name: "Tarpan Roy",
-          imageSrc: "/TeamImages/Events Team/Tarpan_Roy_Eventsteam.jpg",
-        },
-        
-
-        
-
       ],
     },
     {
@@ -288,6 +286,7 @@ const TeamGroup = ({ team }) => {
       {team.members.map((member, index) => (
         <TeamMember
           key={index}
+          index={index}
           name={member.name}
           designation={member.designation}
           imageSrc={member.imageSrc}
@@ -297,9 +296,20 @@ const TeamGroup = ({ team }) => {
   );
 };
 
-const TeamMember = ({ name, designation, imageSrc }) => {
+const TeamMember = ({ name, designation, imageSrc, index }) => {
   return (
-    <div className="flex flex-col items-center justify-center m-4">
+    <motion.div
+      className="flex flex-col items-center justify-center m-4"
+      initial={{ opacity: 0, y: 50, scale: 0 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.1,
+        type: "spring",
+        stiffness: 110,
+        delay: 0.1 * index,
+      }}
+    >
       <div className="w-40 h-40 relative">
         <Image
           src={imageSrc}
@@ -309,9 +319,22 @@ const TeamMember = ({ name, designation, imageSrc }) => {
           className="rounded-full"
         />
       </div>
-      <p className="text-gray-800 font-semibold dark:text-white">{name}</p>
+      <motion.p
+        className="text-gray-800 font-semibold dark:text-white"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.3,
+          type: "spring",
+          stiffness: 110,
+          delay: 0.1 * index,
+        }}
+      >
+        {name}
+      </motion.p>
       <p className="text-gray-600 dark:text-white">{designation}</p>
-    </div>
+    </motion.div>
   );
 };
 
