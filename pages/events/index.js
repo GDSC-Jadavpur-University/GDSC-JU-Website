@@ -12,7 +12,7 @@ function Events() {
         </p>
       </div>
       <div
-        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", padding: "20px" }}
       >
         <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-placement-intern-talk-with-vivek-gupta/">
           <div
