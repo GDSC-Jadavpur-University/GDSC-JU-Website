@@ -43,7 +43,7 @@ const Navbar = () => {
     },
     {
       name: "Subscribe",
-      link: "pages/subscribe.js",
+      link: "/subscribe",
       color: "text-grey-600",
     },
   ];
