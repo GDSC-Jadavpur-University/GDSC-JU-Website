@@ -16,7 +16,7 @@ function Projects() {
           <div className="flex-1 max-w-xl m-4 border border-gray-300 rounded-lg shadow-md flex items-center p-4">
             <img src="/GDSC Project img.png" alt="Hacktoberfest" className="w-48 h-48" />
             <div className="p-4">
-              <h2 className="text-xl font-semibold">Hacktoberfest collab</h2>
+              <h2 className="text-xl font-semibold">HacktoberFest GDSC JU</h2>
               <p className="text-gray-600 text-lg mt-2">
                 Join us in celebrating Hacktoberfest by contributing to our open source projects on GitHub!
               </p>
