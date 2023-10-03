@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image/";
 
+
 const TeamsPage = () => {
   const teams = [
     {
@@ -266,6 +267,7 @@ const TeamMember = ({ name, designation, imageSrc }) => {
   return (
     <div className="flex flex-col items-center justify-center m-4">
       <div className="w-40 h-40 relative">
+
         <Image
           src={imageSrc}
           alt={name}
@@ -273,6 +275,12 @@ const TeamMember = ({ name, designation, imageSrc }) => {
           objectFit="cover"
           className="rounded-full"
         />
+        <div
+        className='mask'
+        style={{
+          background: 'linear-gradient(60 deg, (249, 49, 84, 0.34), rgba(57, 192, 237, 0.3) 100%)',
+        }}>
+        </div>
       </div>
       <p className="text-gray-800 font-semibold dark:text-white">{name}</p>
       <p className="text-gray-600 dark:text-white">{designation}</p>
