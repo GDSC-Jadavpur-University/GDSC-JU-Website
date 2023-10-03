@@ -3,10 +3,10 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Landing() {
   return (
-    <div className="md:px-5 w-[95%] lg:w-[90%] relative mx-auto lg:mt-20 md:mt-[100px]">
+    <div className="w-full p-10">
       {/* Landing text */}
       <div className="flex justify-center items-center">
-        <div className="w-4/5 flex justify-center flex-col">
+        <div className="flex justify-center flex-col">
           <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
             <strong className="font-bold">
               <span className="text-red-400">Ja</span>
@@ -31,15 +31,20 @@ function Landing() {
             solutions for local businesses and their community.
           </p>
 
-          <div className="w-4/5 flex justify-start items-center mt-10">
-            <a href="https://gdsc.community.dev/jadavpur-university-kolkata/" target="_blank">
+          <div className="flex mt-10">
+            <a
+              href="https://gdsc.community.dev/jadavpur-university-kolkata/"
+              target="_blank"
+            >
               <button className="bg-red-400 text-white px-5 py-2 rounded-lg font-semibold text-lg">
-              Join Us
+                Join Us
               </button>
             </a>
+            <a href="https://gdsc.community.dev/jadavpur-university-kolkata/">
             <button className="bg-gray-200 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
               Learn More
             </button>
+              </a>
           </div>
         </div>
         <div>
