@@ -9,8 +9,6 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-import { ThemeSwitcher } from "./ThemeSwitcher";
-
 function Footer() {
   const socials = [
     {
@@ -45,7 +43,7 @@ function Footer() {
     },
     {
       name: "Github",
-      link: "",
+      link: "https://github.com/GDSC-Jadavpur-University/",
       icon: <FaGithub />,
       hoverColor: "hover:text-black",
     },
@@ -104,9 +102,6 @@ function Footer() {
             </a>
           ))}
         </div>
-      </div>
-      <div className="flex justify-end mr-20">
-        <ThemeSwitcher />
       </div>
     </footer>
   );

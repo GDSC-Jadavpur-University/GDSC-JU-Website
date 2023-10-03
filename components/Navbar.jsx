@@ -17,6 +17,11 @@ const Navbar = () => {
 
   const NavData = [
     {
+      name: "About",
+      link: "/about",
+      color: "text-green-600",
+    },
+    {
       name: "Events",
       link: "/events",
       color: "text-red-400",
@@ -40,11 +45,13 @@ const Navbar = () => {
 
   return (
     <div className="flex lg:flex-row items-center justify-between border-b h-auto lg:h-20 px-5 py-5 top-0 z-10 sticky mx-auto bg-transparent backdrop-blur-sm">
+      {/* LOGO */}
       <Link href="/">
         <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
       </Link>
-      <div className="hidden  lg:flex lg:justify-between items-center w-full space-x-4">
-        <div className="hidden lg:flex lg:justify-start items-center w-1/3 space-x-4">
+      {/* NAV LINKS */}
+      <div className="hidden lg:flex lg:justify-center items-center w-full">
+        <div className="hidden lg:flex lg:justify-start items-center gap-5">
           {NavData.map((item, index) => (
             <Link href={item.link} key={index}>
               <p
@@ -55,11 +62,12 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4">
-          <ThemeSwitcher />
-        </div>
       </div>
-
+      {/* THEME SWITCHER */}
+      {/* <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4"> */}
+      <div className="flex justify-center items-center w-1/3 space-x-4">
+        <ThemeSwitcher />
+      </div>
       <div className="lg:hidden">
         <button onClick={toggleMenu}>
           {isMenuOpen ? (
