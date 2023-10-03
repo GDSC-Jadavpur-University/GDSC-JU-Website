@@ -10,6 +10,10 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   const NavData = [
     {
       name: "Events",
@@ -75,7 +79,7 @@ const Navbar = () => {
             >
               <p
                 className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
-                // onClick={closeMenu}
+                onClick={closeMenu}
               >
                 {item.name}
               </p>
