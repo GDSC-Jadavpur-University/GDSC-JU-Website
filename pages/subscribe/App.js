@@ -1,4 +1,4 @@
-/* import Image from "next/image"; */
+import Image from "next/image";
 import React, { useState } from 'react';
 
 const styles = {
@@ -75,7 +75,7 @@ function SubscriptionPage() {
     <div style={styles.subscriptionContainer}>
 
         <div style={styles.centeredImage}>
-        <img src="https://img.freepik.com/vektoren-premium/e-mail-und-messaging-e-mail-marketingkampagne_183665-8.jpg"  width={400} height={300} alt="Your Logo" />
+        <img src="./subs.jpeg"  width={400} height={300} alt="Your Logo" />
       </div>
 
         
@@ -94,7 +94,7 @@ function SubscriptionPage() {
       <br />
       <button style={styles.button} onClick={handleSubscribe}>Subscribe</button>
       <div style={styles.centeredImage}>
-        <img src="https://shorturl.at/AEKOP" width={400} height={100}/>
+        <img src="./gdsc.png" width={400} height={100}/>
         </div>
     </div>
   );
