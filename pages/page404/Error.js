@@ -1,19 +1,22 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import imagee from './404.svg'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import imagee from "./404.svg";
 const Error = () => {
   return (
     <>
-      <div className="container">
-        <div style={{ minHeight: "85vh", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
-          <img src={imagee} alt="error" style={{ width: "500px", marginBottom: 20 }} />
-          {/* <h1 className="mb-3">404 ERROR </h1> */}
-          <h2 className="mb-3">PAGE NOT FOUND</h2>
-          <NavLink to="/" className="btn btn-primary" style={{ fontSize: 18 }}> Back To Home Page </NavLink>
-        </div>
+      <div className="flex flex-col items-center justify-center h-screen">
+        <Image src={imagee} alt="404" width={500} height={500} />
+        <h1 className="text-6xl font-bold">404</h1>
+        <h2 className="text-4xl font-bold">Page Not Found</h2>
+        <Link href="/">
+          <a className="px-4 py-2 mt-4 text-white bg-gray-800 rounded hover:bg-gray-700">
+            Back to Home
+          </a>
+        </Link>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Error
+export default Error;
