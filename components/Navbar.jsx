@@ -41,6 +41,11 @@ const Navbar = () => {
       link: "/team",
       color: "text-green-600",
     },
+    {
+      name: "Subscribe",
+      link: "/subscribe",
+      color: "text-grey-600",
+    },
   ];
 
   return (
