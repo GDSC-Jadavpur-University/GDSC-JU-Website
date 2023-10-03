@@ -11,14 +11,12 @@ const styles = {
     textAlign: "center"
   },
   h2: {
-    fontFamily: "Inter",
     fontSize: "30px",
     color: "grey",
     marginTop:"10",
     marginBottom:"5px"
   },
   p: {
-    fontFamily: "Inter",
     fontSize: "25px",
     color: "black",
     marginTop: "5px"
