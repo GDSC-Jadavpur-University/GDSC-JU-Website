@@ -43,21 +43,17 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/gdsc.png" width={400} height={300} alt="Your Logo" />
       </Link>
-      <div className="hidden  lg:flex lg:justify-between items-center w-full space-x-4">
-        <div className="hidden lg:flex lg:justify-start items-center w-1/3 space-x-4">
-          {NavData.map((item, index) => (
-            <Link href={item.link} key={index}>
-              <p
-                className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
-              >
-                {item.name}
-              </p>
-            </Link>
-          ))}
-        </div>
-        <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4">
-          <ThemeSwitcher />
-        </div>
+      <div className="hidden lg:flex lg:justify-end items-center w-full space-x-4">
+        {NavData.map((item, index) => (
+          <Link href={item.link} key={index}>
+            <p
+              className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
+            >
+              {item.name}
+            </p>
+          </Link>
+        ))}
+        <ThemeSwitcher />
       </div>
 
       <div className="lg:hidden">
@@ -74,9 +70,7 @@ const Navbar = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div
-          className={`lg:hidden flex flex-col items-center justify-center w-full h-screen bg-gray-800 bg-opacity-90 fixed top-0 left-0 z-50`}
-        >
+        <div className={`lg:hidden flex flex-col items-center justify-center w-full h-screen bg-gray-800 bg-opacity-90 fixed top-0 left-0 z-50`}>
           {NavData.map((item, index) => (
             <Link
               href={item.link}
@@ -91,11 +85,8 @@ const Navbar = () => {
               </p>
             </Link>
           ))}
-          {/* close button */}
-          <button
-            onClick={toggleMenu}
-            className="absolute top-0 right-0 pr-10 pt-10"
-          >
+          {/* Close button */}
+          <button onClick={toggleMenu} className="absolute top-0 right-0 pr-10 pt-10">
             <FaTimes className="text-3xl text-white" />
           </button>
         </div>
