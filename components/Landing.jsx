@@ -37,9 +37,11 @@ function Landing() {
               Join Us
               </button>
             </a>
+            <a href="https://gdsc.community.dev/jadavpur-university-kolkata/">
             <button className="bg-gray-200 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
               Learn More
             </button>
+              </a>
           </div>
         </div>
         <div>
