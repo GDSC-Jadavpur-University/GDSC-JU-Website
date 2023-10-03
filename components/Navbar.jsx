@@ -17,6 +17,11 @@ const Navbar = () => {
 
   const NavData = [
     {
+      name: "About",
+      link: "/about",
+      color: "text-green-600",
+    },
+    {
       name: "Events",
       link: "/events",
       color: "text-red-400",
