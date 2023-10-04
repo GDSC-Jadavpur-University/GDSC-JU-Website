@@ -16,36 +16,42 @@ function Footer() {
       link: "https://www.facebook.com/googlefordevs",
       icon: <FaFacebook />,
       hoverColor: "hover:text-blue-600",
+      darkhoverColor: "dark:hover:text-blue-600",
     },
     {
       name: "Twitter",
       link: "https://twitter.com/googledevs",
       icon: <FaTwitter />,
       hoverColor: "hover:text-blue-400",
+      darkhoverColor: "dark:hover:text-blue-400",
     },
     {
       name: "Youtube",
       link: "https://www.youtube.com/googledevelopers",
       icon: <FaYoutube />,
       hoverColor: "hover:text-red-600",
+      darkhoverColor: "dark:hover:text-red-600",
     },
     {
       name: "Instagram",
       link: "https://www.instagram.com/gdsc_ju/",
       icon: <FaInstagram />,
       hoverColor: "hover:text-purple-600",
+      darkhoverColor: "dark:hover:text-purple-600",
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/company/gdsc-jadavpur-university/",
       icon: <FaLinkedin />,
       hoverColor: "hover:text-blue-800",
+      darkhoverColor: "dark:hover:text-blue-800",
     },
     {
       name: "Github",
       link: "https://github.com/GDSC-Jadavpur-University/",
       icon: <FaGithub />,
       hoverColor: "hover:text-black",
+      darkhoverColor: "dark:hover:text-white",
     },
   ];
 
@@ -96,7 +102,7 @@ function Footer() {
             <a
               href={social.link}
               key={index}
-              className={`text-gray-600 dark:text-gray-500 dark:hover:text-gray-400 ${social.hoverColor} text-3xl mr-4`}
+              className={`text-gray-600 dark:text-gray-500 ${social.darkhoverColor} ${social.hoverColor} text-3xl mr-4`}
               target="_blank"
             >
               {social.icon}
