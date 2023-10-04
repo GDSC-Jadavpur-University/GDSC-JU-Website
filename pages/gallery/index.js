@@ -29,20 +29,15 @@ function Gallery() {
   function closeModal() {
     setIsOpen(false)
   }
-  const customStyles = {
-    content: {
-      top: '100px',
-    },
-  };
-  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <ReactModal
         style={{
           content:{
-            top:'100px'
+            top:'100px',
           }
         }}
+        
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
       >
