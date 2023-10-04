@@ -2,18 +2,6 @@
 
 Thank you for your interest in contributing to GDSC JU Website!
 
-We welcome all types of contributions, including:
-
-* Bug fixes
-* New features
-* Documentation improvements
-* Testing
-
-If you don't know where to start, there is a special 'Good First Issue' listing. It will give you a list of
-open issues that are beginner-friendly and help you start contributing to open-source.
-
-> All contributions are equally valuable to the community.
-
 ### To contribute, please follow these steps:
 
 1. Fork the repository.
@@ -21,9 +9,7 @@ open issues that are beginner-friendly and help you start contributing to open-s
 3. Make your changes and commit them to your branch.
 4. Push your changes to your fork.
 5. Create a pull request to the main repository.
-
-> Before writing any code, we strongly advise you to search through the existing PRs or
-issues to make sure nobody is already working on the same thing.
+6. No need to ask for asssignment of issue, just create a pull request when your update is ready.
 
 Please make sure that your pull request adheres to the following guidelines:
 
