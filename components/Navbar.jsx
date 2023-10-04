@@ -20,21 +20,25 @@ const Navbar = () => {
       name: "About",
       link: "/about",
       color: "text-green-600",
+      hoverColor: "text-green-900",
     },
     {
       name: "Events",
       link: "/events",
       color: "text-red-400",
+      hoverColor: "text-red-900",
     },
     {
       name: "Gallery",
       link: "/gallery",
       color: "text-blue-400",
+      hoverColor: "text-blue-900",
     },
     {
       name: "Projects",
       link: "/projects",
       color: "text-yellow-400",
+      hoverColor: "text-yellow-900",
     },
     {
       name: "Team",
@@ -45,11 +49,13 @@ const Navbar = () => {
       name: "Subscribe",
       link: "/subscribe",
       color: "text-red-400",
+      hoverColor: "text-red-900",
     },
     {
       name: "Resource",
       link: "/resource",
       color: "text-blue-400",
+      hoverColor: "text-blue-900",
     },
   ];
 
@@ -65,7 +71,9 @@ const Navbar = () => {
           {NavData.map((item, index) => (
             <Link href={item.link} key={index}>
               <p
-                className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
+                className={`text-xl font-semibold hover:${item.hoverColor}
+                hover:underline
+                transform scale-100 hover:scale-110 transition-transform   transition:ease ${item.color}`}
               >
                 {item.name}
               </p>
