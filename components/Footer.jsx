@@ -8,44 +8,45 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
+import { twMerge } from "tailwind-merge";
 
 function Footer() {
   const socials = [
     {
       name: "Facebook",
       link: "https://www.facebook.com/googlefordevs",
-      icon: <FaFacebook />,
+      icon: FaFacebook,
       hoverColor: "hover:text-blue-600",
     },
     {
       name: "Twitter",
       link: "https://twitter.com/googledevs",
-      icon: <FaTwitter />,
+      icon: FaTwitter ,
       hoverColor: "hover:text-blue-400",
     },
     {
       name: "Youtube",
       link: "https://www.youtube.com/googledevelopers",
-      icon: <FaYoutube />,
+      icon: FaYoutube ,
       hoverColor: "hover:text-red-600",
     },
     {
       name: "Instagram",
       link: "https://www.instagram.com/gdsc_ju/",
-      icon: <FaInstagram />,
+      icon: FaInstagram ,
       hoverColor: "hover:text-purple-600",
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/company/gdsc-jadavpur-university/",
-      icon: <FaLinkedin />,
+      icon: FaLinkedin ,
       hoverColor: "hover:text-blue-800",
     },
     {
       name: "Github",
       link: "https://github.com/GDSC-Jadavpur-University/",
-      icon: <FaGithub />,
-      hoverColor: "hover:text-black",
+      icon: FaGithub ,
+      hoverColor: "hover:text-black dark:hover:text-white",
     },
   ];
 
@@ -99,7 +100,7 @@ function Footer() {
               className={`text-gray-600 dark:text-gray-500 ${social.hoverColor} text-3xl mr-4`}
               target="_blank"
             >
-              {social.icon}
+              <social.icon className={twMerge(social.hoverColor)} />
             </a>
           ))}
         </div>

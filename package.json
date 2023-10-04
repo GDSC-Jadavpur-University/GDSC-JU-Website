@@ -17,7 +17,8 @@
     "next-themes": "^0.2.1",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
     "autoprefixer": "latest",
