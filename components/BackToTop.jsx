@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BsFillArrowUpSquareFill } from "react-icons/bs";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const BackToTop = () => {
@@ -26,12 +26,12 @@ const BackToTop = () => {
     <>
       {showButton && (
         <motion.button
-          className="fixed bottom-5 right-5 z-50 p-2  dark:bg-gray-400 bg-gray-300 rounded-full shadow-md hover:bg-gray-300"
+          className="fixed bottom-5 right-5 z-50 p-2  dark:bg-gray-600 bg-gray-400 rounded-full shadow-md hover:bg-gray-400"
           onClick={scrollToTop}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <BsFillArrowUpSquareFill size={30} style={{color: "black"}}/>
+          <BsFillArrowUpCircleFill size={30} style={{color: "white"}}/>
         </motion.button>
       )}
     </>
