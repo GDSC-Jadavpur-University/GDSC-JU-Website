@@ -11,30 +11,32 @@ function About() {
   ];
 
   return (
-    <div className="flex flex-col items-center mx-20">
+    <div className="flex flex-col items-center mx-8 sm:mx-20">
       <h1 className="font-bold my-5 text-4xl">About</h1>
-      <p className="text-center">
-        The Google Developer Student Club of Jadavpur University, JU. The Google
-        Developer Student Club program is a program for university students,
-        designed to help them build their technical skills and knowledge and
-        ultimately apply these skills practically to build solutions and solve
-        real world problems for local businesses and communities. It is open to
-        any student, ranging from novice developers who are just starting, to
-        advanced developers who want to further improve their skills. It is a
-        space for students to learn and collaborate in a peer-to-peer learning
-        environment. The GDSC will host events regarding the fields of web
-        development, app development, competitive programming, machine learning,
-        DSA and more. The aim of the club is to help students to bridge the gap
-        between theory and practice, along with this - the students can build
-        their professional and personal networks and get access to google
-        developer resources.
-      </p>
-      <div className="flex flex-col lg:flex-row justify-center my-5">
+      <div>
+        <p className="text-center">
+          The Google Developer Student Club of Jadavpur University, JU. The Google
+          Developer Student Club program is a program for university students,
+          designed to help them build their technical skills and knowledge and
+          ultimately apply these skills practically to build solutions and solve
+          real world problems for local businesses and communities. It is open to
+          any student, ranging from novice developers who are just starting, to
+          advanced developers who want to further improve their skills. It is a
+          space for students to learn and collaborate in a peer-to-peer learning
+          environment. The GDSC will host events regarding the fields of web
+          development, app development, competitive programming, machine learning,
+          DSA and more. The aim of the club is to help students to bridge the gap
+          between theory and practice, along with this - the students can build
+          their professional and personal networks and get access to google
+          developer resources.
+        </p>
+      </div>
+      <div className="flex flex-col lg:flex-row justify-center my-5 w-screen">
         {MapData.map((data) => (
-          <div className="mx-5" key={data.name}>
-            <h1 className="font-bold my-5 text-2xl">{data.name}</h1>
+          <div className="mx-5 w-1/2 sm:w-screen" key={data.name}>
+            <h1 className="font-bold my-5 text-2xl text-center mx-auto">{data.name}</h1>
             <iframe
-              className="w-96 h-96"
+              className="w-80 h-80 sm:w-96 sm:h-96"
               src={data.src}
               allowfullscreen=""
               loading="lazy"
@@ -47,3 +49,4 @@ function About() {
 }
 
 export default About;
+
