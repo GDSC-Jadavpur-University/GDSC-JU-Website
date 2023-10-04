@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 
 function Gallery() {
   const teams = [
-    { imageSrc: "/Copy of EXTENDED CORE TEAM.png" },
-    { imageSrc: "/Copy of CORE TEAM.png" },
-    { imageSrc: "/Copy of Copy of IMG_1771.png" },
-    { imageSrc: "/Copy of IMG-20230927-WA0187.jpg" },
-    { imageSrc: "/Copy of Photo from Aindree.jpg" },
-    { imageSrc: "/Copy of Siddharth.png" },
-    { imageSrc: "/Copy of Copy of Copy of Copy of DSCN1310.jpg" },
-    { imageSrc: "/Copy of Copy of Copy of Copy of IMG_0204_edited.jpg" },
-    { imageSrc: "/Copy of Copy of Copy of DSCN1288.JPG.png" },
-    { imageSrc: "/Copy of Copy of Copy of IMG_0221_edited.jpg" },
-    { imageSrc: "/Copy of Copy of Copy of DSCN1311.jpg" },
+    { imageSrc: "/Gallery/Copy of EXTENDED CORE TEAM.png" },
+    { imageSrc: "/Gallery/Copy of CORE TEAM.png" },
+    { imageSrc: "/Gallery/Copy of Copy of IMG_1771.png" },
+    { imageSrc: "/Gallery/Copy of IMG-20230927-WA0187.jpg" },
+    { imageSrc: "/Gallery/Copy of Photo from Aindree.jpg" },
+    { imageSrc: "/Gallery/Copy of Siddharth.png" },
+    { imageSrc: "/Gallery/Copy of Copy of Copy of Copy of DSCN1310.jpg" },
+    { imageSrc: "/Gallery/Copy of Copy of Copy of Copy of IMG_0204_edited.jpg" },
+    { imageSrc: "/Gallery/Copy of Copy of Copy of DSCN1288.JPG.png" },
+    { imageSrc: "/Gallery/Copy of Copy of Copy of IMG_0221_edited.jpg" },
+    { imageSrc: "/Gallery/Copy of Copy of Copy of DSCN1311.jpg" },
   ];
 
   return (
