@@ -12,7 +12,12 @@ function Events() {
         </p>
       </div>
       <div
-        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", padding: "20px" }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          padding: "20px",
+        }}
       >
         <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-placement-intern-talk-with-vivek-gupta/">
           <div
@@ -28,7 +33,7 @@ function Events() {
               alignItems: "center",
             }}
           >
-            <img
+            <Image
               src="/Vivek Gupta Event.jpg"
               class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
               alt="Event 2"
@@ -54,7 +59,7 @@ function Events() {
               alignItems: "center",
             }}
           >
-            <img
+            <Image
               src="/Orientation Event.jpg"
               class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
               alt="Event 2"
