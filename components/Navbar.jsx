@@ -4,6 +4,8 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
+import styles from "./Navbar.module.css";
+
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -20,31 +22,37 @@ const Navbar = () => {
       name: "About",
       link: "/about",
       color: "text-green-600",
+      hoverColor: "text-green-900",
     },
     {
       name: "Events",
       link: "/events",
       color: "text-red-400",
+      hoverColor: "text-red-900",
     },
     {
       name: "Gallery",
       link: "/gallery",
       color: "text-blue-400",
+      hoverColor: "text-blue-900",
     },
     {
       name: "Projects",
       link: "/projects",
       color: "text-yellow-400",
+      hoverColor: "text-yellow-900",
     },
     {
       name: "Team",
       link: "/team",
       color: "text-green-600",
+      hoverColor: "text-green-900",
     },
     {
       name: "Subscribe",
       link: "/subscribe",
       color: "text-grey-600",
+      hoverColor: "text-gray-900",
     },
   ];
 
@@ -60,7 +68,7 @@ const Navbar = () => {
           {NavData.map((item, index) => (
             <Link href={item.link} key={index}>
               <p
-                className={`text-xl font-semibold hover:text-gray-400 ${item.color}`}
+                className={`text-xl font-semibold hover:${item.hoverColor} hover:scale-110  hover:underline transition-transform transform ${item.color}`}
               >
                 {item.name}
               </p>
