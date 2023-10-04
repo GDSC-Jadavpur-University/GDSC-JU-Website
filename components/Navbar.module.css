@@ -1,0 +1,4 @@
+.hover\:scale-110:hover {
+    transform: scale(1.1); /* Enlarge the text by 10% on hover */
+    transition: transform 0.1s ease; /* Add a smooth transition effect */
+}  

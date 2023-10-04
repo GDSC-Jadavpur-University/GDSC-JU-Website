@@ -33,7 +33,7 @@ function Fields() {
         </div>
         <div className="w-10/12 ">
           <p className="font-semibold md:text-xl text-6xl text-green-600 lg:mb-5">
-            DSA And CP
+            DSA and CP
           </p>
           <p className="text-lg dark:text-white">
             DSA (Data Structures and Algorithms) is the study of organizing and
