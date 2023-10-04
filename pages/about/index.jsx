@@ -11,10 +11,10 @@ function About() {
   ];
 
   return (
-    <div className="flex flex-col items-center mx-20">
-      <h1 className="font-bold my-5 text-4xl">About</h1>
-      <p className="text-center">
-        The Google Developer Student Club of Jadavpur University, JU. The Google
+    <div className="flex flex-col items-center mx-4 sm:mx-10 md:mx-20">
+      <h1 className="font-bold my-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">About</h1>
+      <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+      The Google Developer Student Club of Jadavpur University, JU. The Google
         Developer Student Club program is a program for university students,
         designed to help them build their technical skills and knowledge and
         ultimately apply these skills practically to build solutions and solve
@@ -29,14 +29,14 @@ function About() {
         their professional and personal networks and get access to google
         developer resources.
       </p>
-      <div className="flex justify-center my-5">
+      <div className="flex flex-col my-5 sm:flex-row sm:justify-center width={50%}">
         {MapData.map((data) => (
-          <div className="mx-5" key={data.name}>
-            <h1 className="font-bold my-5 text-2xl">{data.name}</h1>
+          <div className="mx-2 my-3 sm:w-1/2" key={data.name}>
+            <h1 className="font-bold my-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">{data.name}</h1>
             <iframe
-              className="w-96 h-96"
+              className="w-full sm:w-96 h-48 sm:h-72 lg:h-96 xl:h-96"
               src={data.src}
-              allowfullscreen=""
+              allowFullScreen
               loading="lazy"
             ></iframe>
           </div>
