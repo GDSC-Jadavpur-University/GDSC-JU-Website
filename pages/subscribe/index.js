@@ -75,7 +75,7 @@ function SubscriptionPage() {
   return (
     <div style={styles.subscriptionContainer}>
       <div style={styles.centeredImage}>
-        <Image src="/subs.jpeg" width={400} height={300} alt="Your Logo" />
+        <Image src="/Newsletter (1).png" width={400} height={300} alt="Your Logo" />
       </div>
 
       <h2 style={styles.h2}>Subscribe to our Newsletter!</h2>
