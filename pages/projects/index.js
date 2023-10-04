@@ -16,10 +16,12 @@ function Projects() {
 
         <div className="flex justify-center flex-wrap mt-8">
           <div className="flex-1 max-w-xl m-4 border border-gray-300 rounded-lg shadow-md flex items-center p-4">
-            <img
+            <Image
               src="/GDSC Project img.png"
               alt="Hacktoberfest"
               className="w-48 h-48"
+              width={192}
+              height={192}
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold">HacktoberFest GDSC JU</h2>
