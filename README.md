@@ -5,11 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, Install necessary packages 
 
 npm install
-# or
+or
 yarn add
-# or
+or
 pnpm add
-# or
+or
 bun add
 
 
