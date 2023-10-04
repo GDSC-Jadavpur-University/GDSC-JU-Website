@@ -41,7 +41,7 @@ function Landing() {
               </button>
             </a>
             <a href="https://developers.google.com/community/gdsc">
-              <button className="bg-gray-200  text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5 hover:bg-zinc-500">
+              <button className="bg-gray-200  text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5 hover:bg-zinc-500 hover:text-white">
                 Learn More
               </button>
             </a>

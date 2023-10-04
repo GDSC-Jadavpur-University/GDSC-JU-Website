@@ -96,7 +96,7 @@ function Footer() {
             <a
               href={social.link}
               key={index}
-              className={`text-gray-600 dark:text-gray-500 ${social.hoverColor} text-3xl mr-4`}
+              className={`text-gray-600 dark:text-gray-500 dark:hover:text-gray-400 ${social.hoverColor} text-3xl mr-4`}
               target="_blank"
             >
               {social.icon}
