@@ -182,6 +182,13 @@ const TeamsPage = () => {
           name: "Rajat Subhra Chowdury",
           imageSrc: "/TeamImages/Events Team/Rajat_subhra_chowdhury.jpeg",
         },
+        {
+          name: "Tarpan Roy",
+          imageSrc: "/TeamImages/Events Team/Tarpan_Roy_Eventsteam.jpg",
+        },{
+          name: "Surjayan Kar",
+          imageSrc: "/TeamImages/Events Team/Surjayan_Kar_EventsTeam.jpg",
+        },
       ],
     },
     {
