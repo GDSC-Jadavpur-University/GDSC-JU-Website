@@ -1,0 +1,1 @@
+this['/next']=this['/next']||{},this['/next'].config=this['/next'].config||{};this['/next'].config.js=(function(){'use strict';const _ref={exports:{}};(function(module,exports){var nextConfig={reactStrictMode:!0};module.exports=nextConfig;})(_ref);var next_config = _ref.exports;return next_config;}());
