@@ -29,7 +29,7 @@ function About() {
         their professional and personal networks and get access to google
         developer resources.
       </p>
-      <div className="flex justify-center my-5">
+      <div className="flex flex-col lg:flex-row justify-center my-5">
         {MapData.map((data) => (
           <div className="mx-5" key={data.name}>
             <h1 className="font-bold my-5 text-2xl">{data.name}</h1>
