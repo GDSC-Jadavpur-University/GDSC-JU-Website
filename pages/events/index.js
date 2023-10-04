@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function EventCard(props) {
   return (
@@ -16,11 +17,12 @@ function EventCard(props) {
           alignItems: "center",
         }}
       >
-        <img
+        <Image
           src={props.image}
-          class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
           alt={props.title}
-          style={{ width: "150px", height: "150px" }}
+          width={150}
+          height={150}
+          className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
         />
         <div style={{ padding: "1em" }}>
           <h3 style={{ fontWeight: "bold" }}>{props.title}</h3>
@@ -46,8 +48,6 @@ function EventPage() {
           padding: "20px",
         }}
       >
-
-
         <EventCard
           link="https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-placement-intern-talk-with-vivek-gupta/"
           image="/Vivek Gupta Event.jpg"
@@ -56,12 +56,10 @@ function EventPage() {
         />
         <EventCard
           link="https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-gdsc-ju-orientation-session/"
-          image="/Orientation Event.jpg"
+          image="/GDSC Orientation Event.jpg"
           title="Orientation Session"
           description="GDSC JU Orientation Session"
         />
-
-
       </div>
     </div>
   );
