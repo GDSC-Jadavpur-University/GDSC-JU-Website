@@ -33,14 +33,16 @@ function About() {
       </div>
       <div className="flex flex-col lg:flex-row justify-center my-5 w-screen">
         {MapData.map((data) => (
-          <div className="mx-5 w-1/2 sm:w-screen" key={data.name}>
-            <h1 className="font-bold my-5 text-2xl text-center mx-auto">{data.name}</h1>
-            <iframe
-              className="w-80 h-80 sm:w-96 sm:h-96"
-              src={data.src}
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+          <div className="sm:w-1/2 w-screen" key={data.name}>
+            <h1 className="font-bold my-5 w-full text-xl sm:text-2xl text-center mx-auto">{data.name}</h1>
+            <div className="flex w-screen sm:w-auto justify-center">
+              <iframe
+                className="h-80 sm:w-96 sm:h-96"
+                src={data.src}
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         ))}
       </div>
