@@ -11,7 +11,7 @@ function About() {
   ];
 
   return (
-    <div className="flex flex-col items-center mx-20">
+    <div className="flex flex-col items-center mx-8 sm:mx-20">
       <h1 className="font-bold my-5 text-4xl">About</h1>
       <p className="text-center">
         The Google Developer Student Club of Jadavpur University, JU. The Google
@@ -34,7 +34,7 @@ function About() {
           <div className="mx-5" key={data.name}>
             <h1 className="font-bold my-5 text-2xl">{data.name}</h1>
             <iframe
-              className="w-96 h-96"
+              className="w-80 h-80 sm:w-96 sm:h-96"
               src={data.src}
               allowfullscreen=""
               loading="lazy"
@@ -47,3 +47,4 @@ function About() {
 }
 
 export default About;
+
