@@ -36,12 +36,12 @@ function Landing() {
               href="https://gdsc.community.dev/jadavpur-university-kolkata/"
               target="_blank"
             >
-              <button className="bg-red-400 text-white px-5 py-2 rounded-lg font-semibold text-lg">
+              <button className="bg-red-400 hover:bg-red-950 text-white px-5 py-2 rounded-lg font-semibold text-lg">
                 Join Us
               </button>
             </a>
             <a href="https://developers.google.com/community/gdsc">
-              <button className="bg-gray-200 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
+              <button className="bg-gray-200 hover:bg-zinc-500 text-gray-600 px-5 py-2 rounded-lg font-semibold text-lg ml-5">
                 Learn More
               </button>
             </a>
