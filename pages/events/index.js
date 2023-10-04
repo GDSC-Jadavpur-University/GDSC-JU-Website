@@ -38,6 +38,8 @@ function Events() {
               class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
               alt="Event 2"
               style={{ width: "150px", height: "150px" }}
+              width={150}
+              height={150}
             />
             <div style={{ padding: "1em" }}>
               <h3 style={{ fontWeight: "bold" }}>Speaker Session</h3>
@@ -64,6 +66,8 @@ function Events() {
               class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
               alt="Event 2"
               style={{ width: "150px", height: "150px" }}
+              width={150}
+              height={150}
             />
             <div style={{ padding: "1em" }}>
               <h3 style={{ fontWeight: "bold" }}>Info Session</h3>
