@@ -2,8 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, Install necessary packages 
-
+First, Install necessary packages:
+```bash
 npm install
 # or
 yarn add
@@ -11,7 +11,7 @@ yarn add
 pnpm add
 # or
 bun add
-
+```
 
 Second, run the development server:
 
