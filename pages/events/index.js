@@ -39,7 +39,7 @@ function EventPage() {
     
   return (
     <div style={{ textAlign: "center" }}>
-      <strong style={{ fontSize: "2em", fontWeight: "normal" }}>Events</strong>
+      <strong className="text-4xl font-semibold">Events</strong>
       <p style={{ fontSize: "1.2em", marginTop: "0.5em" }}>
         Check out our events
       </p>
