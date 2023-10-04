@@ -44,7 +44,12 @@ const Navbar = () => {
     {
       name: "Subscribe",
       link: "/subscribe",
-      color: "text-grey-600",
+      color: "text-red-400",
+    },
+    {
+      name: "Resource",
+      link: "/resource",
+      color: "text-blue-400",
     },
   ];
 
