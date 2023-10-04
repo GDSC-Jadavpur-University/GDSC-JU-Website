@@ -47,6 +47,7 @@ function EventPage() {
         }}
       >
 
+
         <EventCard
           link="https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-placement-intern-talk-with-vivek-gupta/"
           image="/Vivek Gupta Event.jpg"
@@ -59,6 +60,7 @@ function EventPage() {
           title="Orientation Session"
           description="GDSC JU Orientation Session"
         />
+
 
       </div>
     </div>

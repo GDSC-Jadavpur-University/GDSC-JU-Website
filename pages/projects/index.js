@@ -20,6 +20,8 @@ function Projects() {
               src="/GDSC Project img.png"
               alt="Hacktoberfest"
               className="w-48 h-48"
+              width={192}
+              height={192}
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold">HacktoberFest GDSC JU</h2>
