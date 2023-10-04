@@ -28,7 +28,7 @@ function EventPage() {
           </div>
           <div style={{ flex: "1", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "1em", textAlign: "left" }}>
             <div>
-              <h3 style={{ fontWeight: "bold", marginBottom: "0.5em" }}>{props.title}</h3>
+              <h3 sclassName="w-4/5 text-zinc-900 text-lg md:text-base leading-[2.4rem]">{props.title}</h3>
               <p>{props.description}</p>
             </div>
           </div>
@@ -40,7 +40,7 @@ function EventPage() {
   return (
     <div style={{ textAlign: "center" }}>
       <strong className="text-4xl font-semibold">Events</strong>
-      <p style={{ fontSize: "1.2em", marginTop: "0.5em" }}>
+      <p className="w-4/5 text-gray-500 text-lg font-semibold md:text-base leading-[2.4rem]">
         Check out our events
       </p>
       <div
