@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const styles = {
   subscriptionContainer: {
@@ -8,39 +8,41 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
-    textAlign: "center"
+    textAlign: "center",
   },
   h2: {
+    fontFamily: "Arial",
     fontSize: "30px",
     color: "grey",
-    marginTop:"10",
-    marginBottom:"5px"
+    marginTop: "10",
+    marginBottom: "5px",
   },
   p: {
+    fontFamily: "Calibri",
     fontSize: "25px",
     color: "black",
-    marginTop: "5px"
+    marginTop: "5px",
   },
   inputContainer: {
-    width:"300px",
+    width: "300px",
     borderRadius: "10px",
-    textAlign:"center",
-    padding:"5px",
+    textAlign: "center",
+    padding: "5px",
     fontSize: "20px",
-    marginTop: "5px"
+    marginTop: "5px",
   },
   button: {
     backgroundColor: "rgb(0, 136, 255)",
     border: "none",
     borderRadius: "20px",
-    cursor:"pointer",
+    cursor: "pointer",
     color: "white",
     padding: "10px 20px",
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
     fontSize: "20px",
-    marginBottom: "10px"
+    marginBottom: "10px",
   },
   label: {
     backgroundColor: "rgb(163, 160, 160)",
@@ -51,16 +53,16 @@ const styles = {
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
-    fontSize: "20px"
+    fontSize: "20px",
   },
-  centeredImage: { 
-    display:"flex",
-    textAlign: "center"
-  }
+  centeredImage: {
+    display: "flex",
+    textAlign: "center",
+  },
 };
 
 function SubscriptionPage() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -71,19 +73,15 @@ function SubscriptionPage() {
   };
 
   return (
-    
     <div style={styles.subscriptionContainer}>
-
-        <div style={styles.centeredImage}>
-        <img src=""  width={400} height={300} alt="Your Logo" />
+      <div style={styles.centeredImage}>
+        <Image src="./subs.jpeg" width={400} height={300} alt="Your Logo" />
       </div>
 
-        
-    
       <h2 style={styles.h2}>Subscribe to our Newsletter!</h2>
       <p style={styles.p}>Get the latest updates delivered to your inbox.</p>
       <div style={styles.inputContainer}>
-        <input 
+        <input
           type="email"
           id="email"
           placeholder="youremail@gmail.com"
@@ -92,10 +90,12 @@ function SubscriptionPage() {
         />
       </div>
       <br />
-      <button style={styles.button} onClick={handleSubscribe}>Subscribe</button>
+      <button style={styles.button} onClick={handleSubscribe}>
+        Subscribe
+      </button>
       <div style={styles.centeredImage}>
-        <img src="./gdsc.png" width={400} height={100}/>
-        </div>
+        <Image src="./gdsc.png" width={400} height={100} alt="Your Logo" />
+      </div>
     </div>
   );
 }
