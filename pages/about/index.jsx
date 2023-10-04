@@ -11,7 +11,7 @@ function About() {
   ];
 
   return (
-    <div className="flex flex-col items-center mx-20 ml-7 mr-7 lg:ml-10 lg:mr-10 ">
+    <div className="flex flex-col items-center mx-8 sm:mx-20">
       <h1 className="font-bold my-5 text-4xl">About</h1>
       <div>
         <p className="text-center">
@@ -36,7 +36,7 @@ function About() {
           <div className="mx-5 w-1/2 sm:w-screen" key={data.name}>
             <h1 className="font-bold my-5 text-2xl text-center mx-auto">{data.name}</h1>
             <iframe
-              className=" ml-11 w-96 lg:w-4/5 h-96 lg:mx-auto"
+              className="w-80 h-80 sm:w-96 sm:h-96"
               src={data.src}
               allowfullscreen=""
               loading="lazy"
@@ -49,3 +49,4 @@ function About() {
 }
 
 export default About;
+
