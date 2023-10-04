@@ -6,7 +6,7 @@ function EventPage() {
 
   function EventCard(props) {
     return (
-      <a href={props.link} style={{ textDecoration: "none" }}>
+      <a href={props.link} style={{ textDecoration: "none" }} target="_blank" rel="noopener noreferrer">
         <div
           style={{
             display: "flex",
