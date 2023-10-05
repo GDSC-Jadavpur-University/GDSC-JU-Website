@@ -75,7 +75,6 @@ function SubscriptionPage() {
   return (
     <div style={styles.subscriptionContainer}>
       <div style={styles.centeredImage}>
- replace-newsletter-image
         <Image src="/newsletter.png" width={400} height={300} alt="Your Logo" />
       </div>
 
