@@ -76,6 +76,14 @@ function Footer() {
       name: "Team",
       link: "/team",
     },
+    {
+      name: "Subscribe",
+      link: "/subscribe",
+    },
+    {
+      name: "Resources",
+      link: "/resource",
+    },
   ];
 
   return (
