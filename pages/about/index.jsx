@@ -44,7 +44,7 @@ function About() {
             <div className="flex w-screen sm:w-auto justify-center relative">
               {!iframeLoaded && (
                 <div className="w-full absolute top-1/4 left-1/2">
-                  <ClipLoader color="#000" loading={!iframeLoaded} size={50} />
+                  <ClipLoader color="#8d37d7" loading={!iframeLoaded} size={50} />
                 </div>
               )}
 
