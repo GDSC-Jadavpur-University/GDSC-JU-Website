@@ -1,33 +1,67 @@
 import React from "react";
-function Events() {
+import Image from "next/image";
+import CenterLayout from "@/layout/CenterLayout";
+
+function EventPage() {
+  const EventData = [
+    {
+      title: "Speaker Session",
+      description: "Placement & Intern Talk With Vivek Gupta",
+      image: "/Vivek Gupta Event.jpg",
+      link: "https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-placement-intern-talk-with-vivek-gupta/",
+    },
+    {
+      title: "Orientation Session",
+      description: "GDSC JU Orientation Session",
+      image: "/Orientation Event.jpg",
+      link: "https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-gdsc-ju-orientation-session/",
+    },
+  ];
+
   return (
-    <div style={{display: "flex", flexDirection: "column"}}>
-      <div style={{textAlign: "center"}}>
-        <strong style={{fontSize: "2em", fontWeight: "normal"}}>Events</strong>
-        <p style={{fontSize: "1.2em", marginTop: "0.5em"}}>Check out our events</p>
-      </div>
-      <div style={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
-        <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-placement-intern-talk-with-vivek-gupta/">
-          <div style={{flex: "1", maxWidth: "300px", marginRight: "0.5em", marginBottom: "0.5em", border: "1px solid #ccc", borderRadius: "5px", boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)", display: "flex", alignItems: "center"}}>
-            <img src="/Vivek Gupta Event.jpg" alt="Event 2" style={{width: "150px", height: "150px"}} />
-            <div style={{padding: "1em"}}>
-              <h3 style={{fontWeight: "bold"}}>Speaker Session</h3>
-              <p>Placement & Intern Talk With Vivek Gupta</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-gdsc-ju-orientation-session/">
-          <div style={{flex: "1", maxWidth: "300px", marginRight: "0.5em", marginBottom: "0.5em", border: "1px solid #ccc", borderRadius: "5px", boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)", display: "flex", alignItems: "center"}}>
-            <img src="/Orientation Event.jpg" alt="Event 2" style={{width: "150px", height: "150px"}} />
-            <div style={{padding: "1em"}}>
-              <h3 style={{fontWeight: "bold"}}>Info Session</h3>
-              <p>GDSC JU Orientation Session</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+    <>
+      <CenterLayout>
+        <div className="row">
+          {EventData.map((event) => {
+            return (
+              <EventCard
+                key={event.title}
+                title={event.title}
+                description={event.description}
+                image={event.image}
+                link={event.link}
+              />
+            );
+          })}
+        </div>
+      </CenterLayout>
+    </>
   );
 }
 
-export default Events;
+const EventCard = (props) => (
+  <div className="col-md-4 mb-4">
+    <div className="bg-white rounded-lg shadow-lg">
+      <Image
+        src={props.image}
+        alt={props.title}
+        className="rounded-t-lg w-full"
+        width={300}
+        height={180}
+        objectFit="cover"
+      />
+      <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-800">{props.title}</h3>
+        <p className="text-gray-600 mt-2">{props.description}</p>
+        <a
+          href={props.link}
+          className="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+        >
+          Know More
+        </a>
+      </div>
+    </div>
+  </div>
+);
+
+export default EventPage;
