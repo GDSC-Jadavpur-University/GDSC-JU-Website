@@ -1,10 +1,10 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Image from "next/image/";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import { motion } from "framer-motion";
 import ReactModal from "react-modal";
-import {AiFillCloseCircle} from 'react-icons/ai'
-import {FaMagnifyingGlassPlus} from 'react-icons/fa6'
+import { AiFillCloseCircle } from "react-icons/ai";
+import { FaMagnifyingGlassPlus } from "react-icons/fa6";
 function Gallery() {
   const teams = [
     { imageSrc: "/Gallery/Copy of EXTENDED CORE TEAM.png" },
@@ -14,38 +14,38 @@ function Gallery() {
     { imageSrc: "/Gallery/Copy of Photo from Aindree.jpg" },
     { imageSrc: "/Gallery/Copy of Siddharth.png" },
     { imageSrc: "/Gallery/Copy of Copy of Copy of Copy of DSCN1310.jpg" },
-    { imageSrc: "/Gallery/Copy of Copy of Copy of Copy of IMG_0204_edited.jpg" },
+    {
+      imageSrc: "/Gallery/Copy of Copy of Copy of Copy of IMG_0204_edited.jpg",
+    },
     { imageSrc: "/Gallery/Copy of Copy of Copy of DSCN1288.JPG.png" },
     { imageSrc: "/Gallery/Copy of Copy of Copy of IMG_0221_edited.jpg" },
     { imageSrc: "/Gallery/Copy of Copy of Copy of DSCN1311.jpg" },
   ];
-  const { height, width } = useWindowDimensions()
+  const { height, width } = useWindowDimensions();
   const [modalIsOpen, setIsOpen] = useState(false);
   const [image, setImage] = useState(null);
   function openModal(imageSrc) {
-    setImage(imageSrc)
-    setIsOpen(true)
+    setImage(imageSrc);
+    setIsOpen(true);
   }
   function closeModal() {
-    setIsOpen(false)
+    setIsOpen(false);
   }
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <ReactModal
         style={{
-          content:{
-            top:'100px',
-          }
+          content: {
+            top: "100px",
+          },
         }}
-        
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
       >
         <button className="float-right " onClick={closeModal}>
-          <AiFillCloseCircle size={'2em'}/>
+          <AiFillCloseCircle size={"2em"} />
         </button>
         <Image
-          
           src={image}
           alt="team"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -72,7 +72,6 @@ function Gallery() {
           >
             <div className={" relative"}>
               <Image
-
                 src={team.imageSrc}
                 alt="team"
                 width={300}
@@ -81,10 +80,12 @@ function Gallery() {
                 objectFit="cover"
               />
               <button
-                className={"float-right bottom-2 right-2 bg-slate-300 p-0.5 rounded absolute"}
-                onClick={()=>openModal(team.imageSrc)}
+                className={
+                  "float-right bottom-2 right-2 bg-slate-300 p-0.5 rounded absolute"
+                }
+                onClick={() => openModal(team.imageSrc)}
               >
-               <FaMagnifyingGlassPlus size={'0.8em'}/>
+                <FaMagnifyingGlassPlus size={"0.8em"} />
               </button>
             </div>
           </motion.div>
@@ -93,7 +94,5 @@ function Gallery() {
     </div>
   );
 }
-
-
 
 export default Gallery;

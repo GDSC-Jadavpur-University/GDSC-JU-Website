@@ -51,7 +51,7 @@ function About() {
                 className="h-80 sm:w-96 sm:h-96"
                 src={data.src}
                 onLoad={handleIframeLoad}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
             </div>
