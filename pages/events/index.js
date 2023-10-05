@@ -22,17 +22,39 @@ function EventPage() {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-between",
-    gap: "20px",
-    marginRight: "20px", // Adjust the rightmargin 
-    marginLeft: "20px", // Adjust the bottommargin
+    gap: "20px", // Add gap between cards
   };
 
   const eventCardStyle = {
-    flex: 1,
-    maxWidth: "calc(33.33% - 20px)", // Adjust the width
-    marginRight: "20px", // Adjust the rightmargin 
-    marginBottom: "20px", // Adjust the bottommargin
-    padding: "10px",
+    flex: "0 0 calc(33.33% - 20px)", // Equal size for all cards with padding
+    padding: "20px", // Padding inside the card
+  };
+
+  const imageContainerStyle = {
+    height: "400px",
+    overflow: "hidden",
+    position: "relative",
+  };
+
+  const overlayStyle = {
+    content: "",
+    position: "absolute",
+    top: "0",
+    left: "0",
+    right: "0",
+    bottom: "0",
+    background: "linear-gradient(transparent, rgba(0, 0, 0, 0.7))",
+    pointerEvents: "none",
+    opacity: "0",
+    transition: "opacity 0.3s ease-in-out",
+  };
+
+  const overlayEnter = (e) => {
+    e.currentTarget.querySelector(".overlay").style.opacity = "1";
+  };
+
+  const overlayLeave = (e) => {
+    e.currentTarget.querySelector(".overlay").style.opacity = "0";
   };
 
   return (
@@ -47,6 +69,11 @@ function EventPage() {
                 description={event.description}
                 image={event.image}
                 link={event.link}
+                style={eventCardStyle}
+                imageContainerStyle={imageContainerStyle}
+                overlayStyle={overlayStyle}
+                overlayEnter={overlayEnter}
+                overlayLeave={overlayLeave}
               />
             );
           })}
@@ -57,18 +84,25 @@ function EventPage() {
 }
 
 const EventCard = (props) => (
-  <div style={props.style}>
+  <div style={props.style} className="event-card">
     <div className="bg-white rounded-lg shadow-lg">
-   <div style={{ height: "180px", overflow: "hidden" }}>
-      <Image
-        src={props.image}
-        alt={props.title}
-        className="rounded-t-lg w-full"
-        width={300}
-        height={180}
-        objectFit="cover"
-      />
-          </div>
+      <div
+        className="image-container"
+        style={props.imageContainerStyle}
+        onMouseEnter={props.overlayEnter}
+        onMouseLeave={props.overlayLeave}
+      >
+        <Image
+          src={props.image}
+          alt={props.title}
+          className="w-full h-full"
+          layout="responsive"
+          width={300}
+          height={180}
+          objectFit="cover"
+        />
+        <div className="overlay" style={props.overlayStyle}></div>
+      </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-gray-800">{props.title}</h3>
         <p className="text-gray-600 mt-2">{props.description}</p>
