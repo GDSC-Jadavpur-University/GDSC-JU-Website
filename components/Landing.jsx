@@ -22,7 +22,7 @@ function Landing() {
             </span>
           </p>
 
-          <p className="w-4/5 text-gray-500 text-lg md:text-base leading-[2.4rem]">
+          <p className="w-4/5 text-gray-400 text-lg md:text-base leading-[2.4rem]">
             Google Developer Student Clubs are university based community groups
             for students interested in Google developer technologies. Students
             from all undergraduate or graduate programs with an interest in
