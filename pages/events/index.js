@@ -23,12 +23,14 @@ function EventPage() {
     flexWrap: "wrap",
     justifyContent: "space-between",
     padding: "10px",
+    marginRight: "20px", // Adjust the rightmargin 
+    marginLeft: "20px", // Adjust the bottommargin
   };
 
   const eventCardStyle = {
     flex: 1,
     maxWidth: "calc(33.33% - 20px)", // Adjust the width
-    marginRight: "20px", // Adjust the topmargin 
+    marginRight: "20px", // Adjust the rightmargin 
     marginBottom: "20px", // Adjust the bottommargin
     padding: "10px",
   };
