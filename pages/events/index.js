@@ -22,6 +22,7 @@ function EventPage() {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-between",
+    padding: "10px",
   };
 
   const eventCardStyle = {
@@ -29,6 +30,7 @@ function EventPage() {
     maxWidth: "calc(33.33% - 20px)", // Adjust the width
     marginRight: "20px", // Adjust the topmargin 
     marginBottom: "20px", // Adjust the bottommargin
+    padding: "10px",
   };
 
   return (
