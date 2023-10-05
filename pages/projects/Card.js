@@ -3,25 +3,31 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
 function Card(props) {
-    return (
-        <div className="max-w-xl m-4 border border-gray-300 rounded-lg shadow-md flex items-center p-4">
-            <img src={props.image} alt={props.alt} className="w-48 h-48" />
-            <div className="p-4">
-                <h2 className="text-xl font-semibold">{props.title}</h2>
-                <p className="text-gray-600 text-lg mt-2">{props.description}</p>
-                <div className="text-center mt-4">
-                    <a href={props.link} target="_blank" rel="noopener noreferrer">
-                        <button className="bg-black hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded border-gray-400 shadow-lg transition-colors duration-300">
-                            <span className="flex items-center">
-                                <FaGithub className="mr-2" />
-                                {props.buttonText}
-                            </span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
+      <Image
+        src={props.image}
+        alt={props.title}
+        className="rounded-t-lg w-full"
+        width={300}
+        height={180}
+        objectFit="cover"
+      />
+      <div className="px-6 py-4">
+        <div className="font-bold text-xl mb-2">{props.title}</div>
+        <p className="text-gray-700 text-base">{props.description}</p>
+      </div>
+      <div className="px-6 pt-4 pb-2">
+        <a
+          href={props.link}
+          className="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+        >
+          <FaGithub className="inline-block mr-2" />
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  );
 }
 
 export default Card;
