@@ -25,6 +25,7 @@ function EventPage() {
           {EventData.map((event) => {
             return (
               <EventCard
+                key={event.title}
                 title={event.title}
                 description={event.description}
                 image={event.image}
