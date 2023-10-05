@@ -18,10 +18,23 @@ function EventPage() {
     },
   ];
 
+  const eventCardContainerStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+  };
+
+  const eventCardStyle = {
+    flex: 1,
+    maxWidth: "calc(33.33% - 20px)", // Adjust the width
+    marginRight: "20px", // Adjust the topmargin 
+    marginBottom: "20px", // Adjust the bottommargin
+  };
+
   return (
     <>
       <CenterLayout>
-        <div className="row">
+        <div style={eventCardContainerStyle}>
           {EventData.map((event) => {
             return (
               <EventCard
@@ -40,7 +53,7 @@ function EventPage() {
 }
 
 const EventCard = (props) => (
-  <div className="col-md-4 mb-4">
+  <div style={props.style}>
     <div className="bg-white rounded-lg shadow-lg">
       <Image
         src={props.image}
