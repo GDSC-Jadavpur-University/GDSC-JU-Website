@@ -22,7 +22,7 @@ function EventPage() {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-between",
-    gap: "20px", // Add gap between cards
+    gap: "5px", // Add gap between cards
   };
 
   const eventCardStyle = {
