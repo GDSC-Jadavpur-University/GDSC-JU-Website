@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -70,19 +72,50 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:justify-start items-center gap-5">
           {NavData.map((item, index) => (
             <Link href={item.link} key={index}>
-              <p
-                className={`text-xl font-semibold hover:${item.hoverColor}
-                hover:underline
-                transform scale-100 hover:scale-110 transition-transform   transition:ease ${item.color}`}
+              <div
+                className={`relative ${
+                  router.pathname === item.link ||
+                  router.pathname.includes(item.link)
+                    ? "underline"
+                    : ""
+                }`}
+                style={{ lineHeight: "3rem" }}
               >
-                {item.name}
-              </p>
+                <p
+                  className={`text-xl font-semibold hover:${item.hoverColor}
+                  transform scale-100 hover:scale-110 transition-transform   transition:ease ${item.color}`}
+                  style={{ display: "inline-block" }}
+                >
+                  {item.name}
+                </p>
+                <style jsx>{`
+                  div:hover::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: black;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    top: calc(100% + 15px);
+                  }
+                  .underline::after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: black;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    top: calc(100% + 15px);
+                  }
+                `}</style>
+              </div>
             </Link>
           ))}
         </div>
       </div>
       {/* THEME SWITCHER */}
-      {/* <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4"> */}
       <div className="flex justify-center items-center w-1/3 space-x-4">
         <ThemeSwitcher />
       </div>
@@ -129,4 +162,5 @@ const Navbar = () => {
     </div>
   );
 };
+
 export default Navbar;
