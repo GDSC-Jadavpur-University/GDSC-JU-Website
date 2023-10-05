@@ -32,7 +32,7 @@ function EventPage() {
   };
 
   const imageContainerStyle = {
-    height: "400px",
+    height: "100%",
      width: "100%",
     overflow: "hidden",
     position: "relative",
