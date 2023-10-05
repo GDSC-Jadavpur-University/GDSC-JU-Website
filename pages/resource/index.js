@@ -14,13 +14,13 @@ function Resource() {
             Development
           </p>
           <p className="text-lg">
-            To learn frontend, follow  <a href= "https://roadmap.sh/frontend" target="_blank"> this roadmap</a>
+            To learn frontend, follow <span className="text-rose-700 underline decoration-rose-200 decoration-dotted hover:text-zinc-600"> <a href= "https://roadmap.sh/frontend" target="_blank"> this roadmap</a></span>
           </p>
           <p className="text-lg">
-            To learn backend, follow  <a href= "https://roadmap.sh/backend" target="_blank"> this roadmap</a>
+            To learn backend, follow <span className="text-rose-700 underline decoration-rose-200 decoration-dotted hover:text-zinc-600"><a href= "https://roadmap.sh/backend" target="_blank"> this roadmap</a></span>
           </p>
           <p className="text-lg">
-            To learn UX design, follow  <a href= "https://roadmap.sh/ux-design" target="_blank"> this roadmap</a>
+            To learn UX design, follow <span className="text-rose-700 underline decoration-rose-200 decoration-dotted hover:text-zinc-600"> <a href= "https://roadmap.sh/ux-design" target="_blank"> this roadmap</a></span>
           </p>
         </div>
         <div className="mx-auto">
@@ -38,13 +38,13 @@ function Resource() {
             DSA And CP
           </p>
           <p className="text-lg">
-            To learn C++, follow  <a href= "https://roadmap.sh/cpp" target="_blank"> this roadmap</a>
+            To learn C++, follow <span className="text-lime-950 underline decoration-lime-500 decoration-dotted hover:text-zinc-600">  <a href= "https://roadmap.sh/cpp" target="_blank"> this roadmap</a></span>
           </p>
           <p className="text-lg">
-            To learn DSA, follow  <a href= "https://roadmap.sh/computer-science" target="_blank"> this roadmap</a>
+            To learn DSA, follow <span className="text-lime-950 underline decoration-lime-500 decoration-dotted hover:text-zinc-600">   <a href= "https://roadmap.sh/computer-science" target="_blank"> this roadmap</a></span>
           </p>
           <p className="text-lg">
-            To learn CP, follow  <a href= "https://codeforces.com/blog/entry/65133" target="_blank"> this roadmap</a>
+            To learn CP, follow <span className="text-lime-950 underline decoration-lime-500 decoration-dotted hover:text-zinc-600">  <a href= "https://codeforces.com/blog/entry/65133" target="_blank"> this roadmap</a> </span>
           </p>
         </div>
       </div>
@@ -56,13 +56,13 @@ function Resource() {
             Machine Learning
           </p>
           <p className="text-lg">
-            To learn Python, follow  <a href= "https://roadmap.sh/python" target="_blank"> this roadmap</a>
+            To learn Python, follow  <span className="text-sky-800 underline decoration-sky-200 decoration-dotted hover:text-zinc-600"> <a href= "https://roadmap.sh/python" target="_blank"> this roadmap</a> </span>
           </p>
           <p className="text-lg">
-            To learn AI/ML, follow  <a href= "https://roadmap.sh/ai-data-scientist" target="_blank"> this roadmap</a>
+            To learn AI/ML, follow <span className="text-sky-800 underline decoration-sky-200 decoration-dotted hover:text-zinc-600">  <a href= "https://roadmap.sh/ai-data-scientist" target="_blank"> this roadmap</a></span>
           </p>
           <p className="text-lg">
-            To learn Prompt Engineering, follow  <a href= "https://roadmap.sh/prompt-engineering" target="_blank"> this roadmap</a>
+            To learn Prompt Engineering, follow <span className="text-sky-800 underline decoration-sky-200 decoration-dotted hover:text-zinc-600">  <a href= "https://roadmap.sh/prompt-engineering" target="_blank"> this roadmap</a></span>
           </p>
         </div>
         <div className="mx-auto">
