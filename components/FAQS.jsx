@@ -1,7 +1,7 @@
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 
-export default function FAQ() {
+export default function FAQS() {
   const ans1= 
   " The GDSC JU community is open to both seasoned techies and beginners in the Tech world. Whether you are into development or CP, or even if you are into more non-coding related technical domains like graphic design and documentation, the commmunity is open to every Jadavpur University student with a passion for technology ";
   const ans3=
