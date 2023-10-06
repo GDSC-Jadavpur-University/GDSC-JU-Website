@@ -7,7 +7,7 @@ export default function FAQS() {
   const ans3=
   "You can be involved in the community of one or more GDSC chapters, however you can be a core team member in only one GDSC chapter. ";
   const ans2 =
-    "No, Code Club JU and GDSC, despite both being involved in encouraging coding habites among students, donot refer to the same entity.";
+    "No, Code Club JU and GDSC, despite both being involved in encouraging coding habits among students, donot refer to the same entity.";
 
   return (
     <Accordion selectionMode="multiple">
