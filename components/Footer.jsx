@@ -72,7 +72,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-gray-100 dark:bg-black py-8">
+    <footer className="w-full bg-gray-100 dark:bg-black dark:border-t-1 py-8">
       {/* Row with links */}
       <div className="w-full flex flex-col sm:flex-row justify-center">
         <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-1/2">
