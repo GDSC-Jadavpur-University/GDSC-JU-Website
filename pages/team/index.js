@@ -159,7 +159,7 @@ const TeamsPage = () => {
         {
           name: 'Sheetali Maity',
           imageSrc: '/TeamImages/ML Team/Sheetali_Maity_ML_Team.jpg',
-          linkedin: 'Sheetali Maity',
+          linkedin: 'https://www.linkedin.com/in/sheetali-maity-1a0724210/',
         },
         {
           name: 'Soumyadipto Pal',
