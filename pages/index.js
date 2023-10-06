@@ -1,6 +1,6 @@
-import Landing from "@/components/Landing";
-import Fields from "@/components/Fields";
-import Head from "next/head";
+import Landing from '@/components/Landing';
+import Fields from '@/components/Fields';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -16,10 +16,7 @@ export default function Home() {
         <Landing />
         <Fields />
       </div>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     </>
   );
 }
