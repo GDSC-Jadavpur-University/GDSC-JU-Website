@@ -79,7 +79,7 @@ function SubscriptionPage() {
       </div>
 
       <h2 style={styles.h2}>Subscribe to our Newsletter!</h2>
-      <p style={styles.p}>Get the latest updates delivered to your inbox.</p>
+      <p className="text-gray-100">Get the latest updates delivered to your inbox.</p>
       <div style={styles.inputContainer}>
         <input type="email" id="email" placeholder="youremail@gmail.com" value={email} onChange={handleEmailChange} />
       </div>

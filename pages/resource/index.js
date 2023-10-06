@@ -6,37 +6,43 @@ function Resource() {
       <p className="text-6xl md:text-4xl font-semibold text-center my-5">Roadmaps for Beginners</p>
 
       {/* Web Development */}
-      <div className="grid grid-cols-2 mx-auto  grid-col my-5  gap-5 md:grid-cols-1 items-center py-5">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-5  items-center py-5">
         <div className="w-10/12 ">
           <p className="font-semibold text-6xl text-red-600 md:text-xl lg:mb-5">Development</p>
           <p className="text-lg">
-            To learn frontend, follow{' '}
-            <span className="text-rose-700 underline decoration-rose-200 decoration-dotted hover:text-zinc-600">
-              {' '}
-              <a href="https://roadmap.sh/frontend" target="_blank">
-                {' '}
-                this roadmap
-              </a>
-            </span>
+
+            To learn frontend, follow{" "}
+            <a
+              className="text-rose-700 dark:text-red-400 underline decoration-rose-200 decoration-dotted"
+              href="https://roadmap.sh/frontend"
+              target="_blank"
+            >
+              {" "}
+              this roadmap
+            </a>
           </p>
           <p className="text-lg">
-            To learn backend, follow{' '}
-            <span className="text-rose-700 underline decoration-rose-200 decoration-dotted hover:text-zinc-600">
-              <a href="https://roadmap.sh/backend" target="_blank">
-                {' '}
-                this roadmap
-              </a>
-            </span>
+            To learn backend, follow{" "}
+            <a
+              className="text-rose-700 dark:text-red-400 underline decoration-rose-200 decoration-dotted"
+              href="https://roadmap.sh/backend"
+              target="_blank"
+            >
+              {" "}
+              this roadmap
+            </a>
           </p>
           <p className="text-lg">
-            To learn UX design, follow{' '}
-            <span className="text-rose-700 underline decoration-rose-200 decoration-dotted hover:text-zinc-600">
-              {' '}
-              <a href="https://roadmap.sh/ux-design" target="_blank">
-                {' '}
-                this roadmap
-              </a>
-            </span>
+            To learn UX design, follow{" "}
+            <a
+              className="text-rose-700 dark:text-red-400 underline decoration-rose-200 decoration-dotted"
+              href="https://roadmap.sh/ux-design"
+              target="_blank"
+            >
+              {" "}
+              this roadmap
+            </a>
+
           </p>
         </div>
         <div className="mx-auto">
@@ -45,78 +51,88 @@ function Resource() {
       </div>
 
       {/* DSA AND CP */}
-      <div className="grid grid-cols-2 gap-4 my-5 rounded-md shadow-md md:grid-cols-1 md:p-2 items-center py-5 bg-slate-200 dark:bg-slate-800">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-5  items-center py-5 bg-slate-200 dark:bg-slate-800">
         <div className="md:mx-auto">
           <Image src="/dsacp-image.png" width={400} height={400} alt="" />
         </div>
         <div className="w-10/12 ">
           <p className="font-semibold md:text-xl text-6xl text-green-600 lg:mb-5">DSA And CP</p>
           <p className="text-lg">
-            To learn C++, follow{' '}
-            <span className="text-lime-950 underline decoration-lime-500 decoration-dotted hover:text-zinc-600">
-              {' '}
-              <a href="https://roadmap.sh/cpp" target="_blank">
-                {' '}
-                this roadmap
-              </a>
-            </span>
+
+            To learn C++, follow{" "}
+            <a
+              className="text-green-600 dark:text-green-400 underline decoration-green-500 decoration-dotted"
+              href="https://roadmap.sh/cpp"
+              target="_blank"
+            >
+              {" "}
+              this roadmap
+            </a>
           </p>
           <p className="text-lg">
-            To learn DSA, follow{' '}
-            <span className="text-lime-950 underline decoration-lime-500 decoration-dotted hover:text-zinc-600">
-              {' '}
-              <a href="https://roadmap.sh/computer-science" target="_blank">
-                {' '}
-                this roadmap
-              </a>
-            </span>
+            To learn DSA, follow{" "}
+            <a
+              className="text-green-600 dark:text-green-400 underline decoration-green-500 decoration-dotted"
+              href="https://roadmap.sh/computer-science"
+              target="_blank"
+            >
+              {" "}
+              this roadmap
+            </a>
           </p>
           <p className="text-lg">
-            To learn CP, follow{' '}
-            <span className="text-lime-950 underline decoration-lime-500 decoration-dotted hover:text-zinc-600">
-              {' '}
-              <a href="https://codeforces.com/blog/entry/65133" target="_blank">
-                {' '}
-                this roadmap
-              </a>{' '}
-            </span>
+            To learn CP, follow{" "}
+            <a
+              className="text-green-600 dark:text-green-400 underline decoration-green-500 decoration-dotted"
+              href="https://codeforces.com/blog/entry/65133"
+              target="_blank"
+            >
+              {" "}
+              this roadmap
+            </a>{" "}
+
           </p>
         </div>
       </div>
 
       {/* Machine Learning */}
-      <div className="grid grid-cols-2 md:grid-cols-1 gap-5  items-center py-5">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-5  items-center py-10">
         <div className="w-10/12">
           <p className="font-semibold text-6xl text-blue-600 md:text-xl lg:mb-5">Machine Learning</p>
           <p className="text-lg">
-            To learn Python, follow{' '}
-            <span className="text-sky-800 underline decoration-sky-200 decoration-dotted hover:text-zinc-600">
-              {' '}
+
+            To learn Python, follow{" "}
+            <span className="text-blue-600 dark:text-blue-300 underline decoration-blue-300 decoration-dotted">
+              {" "}
               <a href="https://roadmap.sh/python" target="_blank">
-                {' '}
+                {" "}
                 this roadmap
-              </a>{' '}
+              </a>{" "}
             </span>
           </p>
           <p className="text-lg">
-            To learn AI/ML, follow{' '}
-            <span className="text-sky-800 underline decoration-sky-200 decoration-dotted hover:text-zinc-600">
-              {' '}
+            To learn AI/ML, follow{" "}
+            <span className="text-blue-600 dark:text-blue-300 underline decoration-blue-300 decoration-dotted">
+              {" "}
               <a href="https://roadmap.sh/ai-data-scientist" target="_blank">
-                {' '}
+                {" "}
+
                 this roadmap
               </a>
             </span>
           </p>
           <p className="text-lg">
-            To learn Prompt Engineering, follow{' '}
-            <span className="text-sky-800 underline decoration-sky-200 decoration-dotted hover:text-zinc-600">
-              {' '}
-              <a href="https://roadmap.sh/prompt-engineering" target="_blank">
-                {' '}
-                this roadmap
-              </a>
-            </span>
+
+            To learn Prompt Engineering, follow{" "}
+            <a
+              href="https://roadmap.sh/prompt-engineering"
+              target="_blank"
+              className="text-blue-600 dark:text-blue-300 underline decoration-blue-300 decoration-dotted"
+            >
+              {" "}
+              this roadmap
+            </a>
+
           </p>
         </div>
         <div className="mx-auto">
