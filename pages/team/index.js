@@ -286,7 +286,7 @@ const TeamsPage = () => {
           linkedin: 'https://www.linkedin.com/in/arya-pandit-146023250/',
         },
         {
-          name: 'Spandan_Das',
+          name: 'Spandan Das',
           imageSrc: '/TeamImages/Content Team/Spandan_Das_Content.jpeg',
           linkedin: 'https://www.linkedin.com/in/spandan-das-907573248/',
         },
