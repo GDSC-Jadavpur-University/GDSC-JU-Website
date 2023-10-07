@@ -1,5 +1,6 @@
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
+import {Divider} from "@nextui-org/react";
 
 export default function FAQS() {
   const ans1= 
@@ -10,9 +11,9 @@ export default function FAQS() {
     "No, Code Club JU and GDSC, despite both being involved in encouraging coding habits among students, donot refer to the same entity.";
 
   return (
-    <Accordion selectionMode="multiple" 
-      className="p-2 flex flex-col gap-1 w-full max-w-[300px]"
-      variant="shadow">
+
+    <Divider className="my-10" />
+    <Accordion selectionMode="multiple">
       <AccordionItem key="1" aria-label="Q 1" title="Can those new to programming join GDSC-JU community?">
         {ans1}
       </AccordionItem>
@@ -23,5 +24,6 @@ export default function FAQS() {
         {ans3}
       </AccordionItem>
     </Accordion>
+   <Divider className="my-10" />
   );
 }
