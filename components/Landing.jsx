@@ -1,5 +1,5 @@
-import React from "react";
-import { Player } from "@lottiefiles/react-lottie-player";
+import React from 'react';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 function Landing() {
   return (
@@ -17,12 +17,10 @@ function Landing() {
             </strong>
 
             <br />
-            <span className="text-gray-500 font-normal">
-              Google Developer Student Club
-            </span>
+            <span className="text-gray-500 font-normal">Google Developer Student Club</span>
           </p>
 
-          <p className="w-4/5 text-gray-500 text-lg md:text-base leading-[2.4rem]">
+          <p className="w-4/5 text-gray-400 text-lg md:text-base leading-[2.4rem]">
             Google Developer Student Clubs are university based community groups
             for students interested in Google developer technologies. Students
             from all undergraduate or graduate programs with an interest in
@@ -32,10 +30,7 @@ function Landing() {
           </p>
 
           <div className="flex mt-10">
-            <a
-              href="https://gdsc.community.dev/jadavpur-university-kolkata/"
-              target="_blank"
-            >
+            <a href="https://gdsc.community.dev/jadavpur-university-kolkata/" target="_blank">
               <button className="bg-red-400  text-white px-5 py-2 rounded-lg font-semibold text-lg hover:bg-red-950">
                 Join Us
               </button>

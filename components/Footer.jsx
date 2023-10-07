@@ -1,87 +1,85 @@
 import React from "react";
 import Link from "next/link";
-
 import {
   FaFacebook,
+  FaTwitter,
   FaYoutube,
   FaInstagram,
   FaLinkedin,
   FaGithub,
-  FaXTwitter,
-} from "react-icons/fa6";
-// import {FaXTwitter} from 'react-icons/fa6'; 
+} from "react-icons/fa";
 
 function Footer() {
   const socials = [
     {
-      name: "Facebook",
-      link: "https://www.facebook.com/googlefordevs",
+      name: 'Facebook',
+      link: 'https://www.facebook.com/googlefordevs',
       icon: <FaFacebook />,
-      hoverColor: "hover:text-blue-600",
-      darkhoverColor: "dark:hover:text-blue-600",
+      hoverColor: 'hover:text-blue-600',
+      darkhoverColor: 'dark:hover:text-blue-600',
     },
     {
       name: "Twitter",
       link: "https://twitter.com/googledevs",
-      icon: <FaXTwitter />,
-      hoverColor: "hover:text-black",
-      darkhoverColor: "dark:hover:text-white",
+      icon: <FaTwitter />,
+      hoverColor: "hover:text-blue-400",
+      darkhoverColor: "dark:hover:text-blue-400",
     },
     {
-      name: "Youtube",
-      link: "https://www.youtube.com/googledevelopers",
+      name: 'Youtube',
+      link: 'https://www.youtube.com/googledevelopers',
       icon: <FaYoutube />,
-      hoverColor: "hover:text-red-600",
-      darkhoverColor: "dark:hover:text-red-600",
+      hoverColor: 'hover:text-red-600',
+      darkhoverColor: 'dark:hover:text-red-600',
     },
     {
-      name: "Instagram",
-      link: "https://www.instagram.com/gdsc_ju/",
+      name: 'Instagram',
+      link: 'https://www.instagram.com/gdsc_ju/',
       icon: <FaInstagram />,
-      hoverColor: "hover:text-pink-600",
-      darkhoverColor: "dark:hover:text-pink-600",
+      hoverColor: "hover:text-purple-600",
+      darkhoverColor: "dark:hover:text-purple-600",
     },
     {
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/company/gdsc-jadavpur-university/",
+      name: 'LinkedIn',
+      link: 'https://www.linkedin.com/company/gdsc-jadavpur-university/',
       icon: <FaLinkedin />,
-      hoverColor: "hover:text-blue-800",
-      darkhoverColor: "dark:hover:text-blue-800",
+      hoverColor: 'hover:text-blue-800',
+      darkhoverColor: 'dark:hover:text-blue-800',
     },
     {
-      name: "Github",
-      link: "https://github.com/GDSC-Jadavpur-University/",
+      name: 'Github',
+      link: 'https://github.com/GDSC-Jadavpur-University/',
       icon: <FaGithub />,
-      hoverColor: "hover:text-black",
-      darkhoverColor: "dark:hover:text-white",
+      hoverColor: 'hover:text-black',
+      darkhoverColor: 'dark:hover:text-white',
     },
   ];
 
   const footerData = [
     {
-      name: "About",
-      link: "/about",
+      name: 'About',
+      link: '/about',
     },
     {
-      name: "Events",
-      link: "/events",
+      name: 'Events',
+      link: '/events',
     },
     {
-      name: "Gallery",
-      link: "/gallery",
+      name: 'Gallery',
+      link: '/gallery',
     },
     {
-      name: "Projects",
-      link: "/projects",
+      name: 'Projects',
+      link: '/projects',
     },
     {
-      name: "Team",
-      link: "/team",
+      name: 'Team',
+      link: '/team',
     },
   ];
 
   return (
-    <footer className="w-full bg-gray-100 dark:bg-black py-8">
+    <footer className="w-full bg-gray-100 dark:bg-black dark:border-t-1 py-8">
       {/* Row with links */}
       <div className="w-full flex flex-col sm:flex-row justify-center">
         <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-1/2">

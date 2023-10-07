@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import { motion } from "framer-motion";
+import { useEffect, useState } from 'react';
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 const BackToTop = () => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         setShowButton(true);
       } else {
@@ -18,7 +18,7 @@ const BackToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -31,7 +31,7 @@ const BackToTop = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <BsFillArrowUpCircleFill size={30} style={{color: "white"}}/>
+          <BsFillArrowUpCircleFill size={30} style={{ color: 'white' }} />
         </motion.button>
       )}
     </>
