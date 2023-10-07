@@ -1,13 +1,15 @@
 import React from "react";
 import Link from "next/link";
+
 import {
   FaFacebook,
-  FaTwitter,
   FaYoutube,
   FaInstagram,
   FaLinkedin,
   FaGithub,
-} from "react-icons/fa";
+  FaXTwitter,
+} from "react-icons/fa6";
+// import {FaXTwitter} from 'react-icons/fa6'; 
 
 function Footer() {
   const socials = [
@@ -21,9 +23,9 @@ function Footer() {
     {
       name: "Twitter",
       link: "https://twitter.com/googledevs",
-      icon: <FaTwitter />,
-      hoverColor: "hover:text-blue-400",
-      darkhoverColor: "dark:hover:text-blue-400",
+      icon: <FaXTwitter />,
+      hoverColor: "hover:text-black",
+      darkhoverColor: "dark:hover:text-white",
     },
     {
       name: "Youtube",
@@ -36,8 +38,8 @@ function Footer() {
       name: "Instagram",
       link: "https://www.instagram.com/gdsc_ju/",
       icon: <FaInstagram />,
-      hoverColor: "hover:text-purple-600",
-      darkhoverColor: "dark:hover:text-purple-600",
+      hoverColor: "hover:text-pink-600",
+      darkhoverColor: "dark:hover:text-pink-600",
     },
     {
       name: "LinkedIn",
