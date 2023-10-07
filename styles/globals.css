@@ -18,7 +18,9 @@ html{
 body{
   overflow-x: hidden;
 }
-
+.dark{
+  background-color: #121212;
+}
 body::-webkit-scrollbar {
   width: 10px;
 }
