@@ -11,6 +11,7 @@ export default function FAQS() {
     "No, Code Club JU and GDSC, despite both being involved in encouraging coding habits among students, donot refer to the same entity.";
 
   return (
+
     <Divider className="my-10" />
     <Accordion selectionMode="multiple">
       <AccordionItem key="1" aria-label="Q 1" title="Can those new to programming join GDSC-JU community?">
