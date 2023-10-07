@@ -159,7 +159,7 @@ const TeamsPage = () => {
         {
           name: 'Sheetali Maity',
           imageSrc: '/TeamImages/ML Team/Sheetali_Maity_ML_Team.jpg',
-          linkedin: 'Sheetali Maity',
+          linkedin: 'https://www.linkedin.com/in/sheetali-maity-1a0724210/',
         },
         {
           name: 'Soumyadipto Pal',
@@ -286,7 +286,7 @@ const TeamsPage = () => {
           linkedin: 'https://www.linkedin.com/in/arya-pandit-146023250/',
         },
         {
-          name: 'Spandan_Das',
+          name: 'Spandan Das',
           imageSrc: '/TeamImages/Content Team/Spandan_Das_Content.jpeg',
           linkedin: 'https://www.linkedin.com/in/spandan-das-907573248/',
         },

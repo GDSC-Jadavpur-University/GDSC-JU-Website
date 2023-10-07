@@ -20,11 +20,13 @@ function Landing() {
             <span className="text-gray-500 font-normal">Google Developer Student Club</span>
           </p>
 
-          <p className="w-4/5 text-gray-500 text-lg md:text-base leading-[2.4rem]">
-            Google Developer Student Clubs are university based community groups for students interested in Google
-            developer technologies. Students from all undergraduate or graduate programs with an interest in growing as
-            a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning
-            environment and build solutions for local businesses and their community.
+          <p className="w-4/5 text-gray-400 text-lg md:text-base leading-[2.4rem]">
+            Google Developer Student Clubs are university based community groups
+            for students interested in Google developer technologies. Students
+            from all undergraduate or graduate programs with an interest in
+            growing as a developer are welcome. By joining a GDSC, students grow
+            their knowledge in a peer-to-peer learning environment and build
+            solutions for local businesses and their community.
           </p>
 
           <div className="flex mt-10">
