@@ -11,14 +11,13 @@ const styles = {
     textAlign: 'center',
   },
   h2: {
-    fontFamily: 'Arial',
     fontSize: '30px',
+    fontWeight: "bold",
     color: 'grey',
     marginTop: '10',
     marginBottom: '5px',
   },
   p: {
-    fontFamily: 'Calibri',
     fontSize: '25px',
     color: 'black',
     marginTop: '5px',
@@ -79,7 +78,7 @@ function SubscriptionPage() {
       </div>
 
       <h2 style={styles.h2}>Subscribe to our Newsletter!</h2>
-      <p className="text-gray-100">Get the latest updates delivered to your inbox.</p>
+      <p className="text-gray-400">Get the latest updates delivered to your inbox.</p>
       <div style={styles.inputContainer}>
         <input type="email" id="email" placeholder="youremail@gmail.com" value={email} onChange={handleEmailChange} />
       </div>
