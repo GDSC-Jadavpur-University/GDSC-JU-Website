@@ -21,7 +21,7 @@ function EventPage() {
   return (
     <>
       <CenterLayout>
-        <div className="row">
+        <div className="w-screen flex justify-center items-center flex-wrap">
           {EventData.map((event) => {
             return (
               <EventCard
@@ -40,7 +40,7 @@ function EventPage() {
 }
 
 const EventCard = (props) => (
-  <div className="col-md-4 mb-4">
+  <div className="col-md-4 m-4 ">
     <div className="bg-white rounded-lg shadow-lg">
       <Image
         src={props.image}
