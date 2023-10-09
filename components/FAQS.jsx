@@ -12,7 +12,19 @@ export default function FAQS() {
 
   return (
     <div>
-      <Divider className="my-10" />
+      <div className="flex justify-center flex-col">
+          <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
+            <strong className="font-bold">
+              <span className="text-red-400">F</span>
+              <span className="text-blue-400">A</span>
+              <span className="text-yellow-400">Q</span>
+              <span className="text-green-600">S</span>
+              &nbsp; University
+            </strong>
+          </p>
+        </div>
+
+      <Divider className="my-4" />
       <Accordion selectionMode="multiple">
         <AccordionItem key="1" aria-label="Q 1" title="Can those new to programming join GDSC-JU community?">
           {ans1}
