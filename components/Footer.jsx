@@ -55,41 +55,21 @@ function Footer() {
     },
   ];
 
-  const footerData = [
-    {
-      name: 'About',
-      link: '/about',
-    },
-    {
-      name: 'Events',
-      link: '/events',
-    },
-    {
-      name: 'Gallery',
-      link: '/gallery',
-    },
-    {
-      name: 'Projects',
-      link: '/projects',
-    },
-    {
-      name: 'Team',
-      link: '/team',
-    },
-  ];
+ 
 
   return (
     <footer className="w-full bg-gray-100 dark:bg-black dark:border-t-1 py-8">
       {/* Row with links */}
       <div className="w-full flex flex-col sm:flex-row justify-center">
         <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-1/2">
-          {footerData.map((item, index) => (
+          <p>Made With ❤️ GDSC Jadavpur University</p>
+          {/* {footerData.map((item, index) => (
             <Link href={item.link} key={index}>
               <p className="text-gray-600 text-xl font-semibold hover:text-gray-400 dark:text-gray-500 dark:hover:text-gray-400 mx-4 my-2">
                 {item.name}
               </p>
             </Link>
-          ))}
+          ))} */}
         </div>
       </div>
       {/*  */}
