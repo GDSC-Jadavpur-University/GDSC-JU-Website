@@ -63,13 +63,7 @@ function Footer() {
       <div className="w-full flex flex-col sm:flex-row justify-center">
         <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-1/2">
           <p>Made With ❤️ GDSC Jadavpur University</p>
-          {/* {footerData.map((item, index) => (
-            <Link href={item.link} key={index}>
-              <p className="text-gray-600 text-xl font-semibold hover:text-gray-400 dark:text-gray-500 dark:hover:text-gray-400 mx-4 my-2">
-                {item.name}
-              </p>
-            </Link>
-          ))} */}
+        
         </div>
       </div>
       {/*  */}
