@@ -21,7 +21,7 @@ function Footer() {
     {
       name: "Twitter",
       link: "https://twitter.com/googledevs",
-      icon: <FaTwitter />,
+      icon: <FaXTwitter />,
       hoverColor: "hover:text-blue-400",
       darkhoverColor: "dark:hover:text-blue-400",
     },

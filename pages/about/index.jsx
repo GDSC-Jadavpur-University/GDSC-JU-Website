@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Loader from './Loader';
+
 function About() {
   const MapData = [
     {
@@ -10,11 +12,12 @@ function About() {
       src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.4897894597025!2d88.40846367836448!3d22.56077758056876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02743203255595%3A0x9c37b30c00660fab!2sJadavpur%20University%2C%20Salt%20Lake%20Campus!5e0!3m2!1sen!2sin!4v1696339381635!5m2!1sen!2sin',
     },
   ];
-  const [iframeLoaded, setIframeLoaded] = useState(false);
+  const [iframeLoaded, setIframeLoaded] = useState(true);
 
   const handleIframeLoad = () => {
-    setIframeLoaded(true);
+    setIframeLoaded(false);
   };
+  
   return (
     <div className="flex flex-col items-center mx-8 sm:mx-20">
       <h1 className="font-bold my-5 text-4xl">About</h1>
@@ -35,8 +38,9 @@ function About() {
         {MapData.map((data) => (
           <div className="sm:w-1/2 w-screen" key={data.name}>
             <h1 className="font-bold my-5 w-full text-xl sm:text-2xl text-center mx-auto">{data.name}</h1>
-            <div className="flex w-screen sm:w-auto justify-center relative">
-              {!iframeLoaded && <div className="animate-pulse w-full h-full bg-gray-500"></div>}
+            <div className="flex w-screen  justify-center relative div">
+              {iframeLoaded ? ( <h1 className='loaderelement'><Loader/></h1>) : (<><div className="animate-pulse w-full h-full bg-gray-500"></div></>) 
+              }
 
               <iframe
                 className="h-80 sm:w-96 sm:h-96 rounded-lg shadow-xl"
