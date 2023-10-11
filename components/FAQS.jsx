@@ -1,16 +1,20 @@
-import React from "react";
-import { Accordion, AccordionItem } from "@nextui-org/react";
-import { Divider } from "@nextui-org/react";
+import React from 'react';
+import { Accordion, AccordionItem } from '@nextui-org/react';
+import { Divider } from '@nextui-org/react';
 
 export default function FAQS() {
   const ans1 =
-    " The GDSC JU community is open to both seasoned techies and beginners in the Tech world. Whether you are into development or CP, or even if you are into more non-coding related technical domains like graphic design and documentation, the community is open to every Jadavpur University student with a passion for technology ";
+    ' The GDSC JU community is open to both seasoned techies and beginners in the Tech world. Whether you are into development or CP, or even if you are into more non-coding related technical domains like graphic design and documentation, the commmunity is open to every Jadavpur University student with a passion for technology ';
   const ans3 =
-    "You can be involved in the community of one or more GDSC chapters, however, you can be a core team member in only one GDSC chapter. ";
+    'You can be involved in the community of one or more GDSC chapters, however you can be a core team member in only one GDSC chapter. ';
   const ans2 =
-    "No, Code Club JU and GDSC, despite both being involved in encouraging coding habits among students, do not refer to the same entity.";
+    'No, Code Club JU and GDSC, despite both being involved in encouraging coding habits among students, donot refer to the same entity.';
 
   return (
+
+    <>
+      <Divider className="my-10" />
+
     <div>
       <div className="flex justify-center flex-col">
           <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
@@ -37,6 +41,6 @@ export default function FAQS() {
         </AccordionItem>
       </Accordion>
       <Divider className="my-10" />
-    </div>
+    </>
   );
 }
