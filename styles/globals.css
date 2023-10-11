@@ -4,43 +4,45 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
-.dark{
+
+.dark {
   background-color: #121212;
 }
+
 body::-webkit-scrollbar {
   width: 10px;
 }
- 
+
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(84, 84, 84, 0.603);
 }
- 
+
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.484);
+  background-color: rgb(69, 69, 69);
   border-radius: 10px;
 }
 
 .fontDosis {
-  font-family: 'Dosis', sans-serif, 
-               'Helvetica Neue', sans-serif,
-               'Arial', sans-serif;
+  font-family: 'Dosis', sans-serif,
+    'Helvetica Neue', sans-serif,
+    'Arial', sans-serif;
 }
 
-.strikeThru{
+.strikeThru {
   content: "";
   border-bottom: 3px solid #ffbb39;
   @apply absolute w-full top-[43%] left-0
