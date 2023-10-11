@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
-  FaXTwitter,
+  FaTwitter,
 } from "react-icons/fa6";
 
 function Footer() {
