@@ -23,7 +23,6 @@ export default function FAQS() {
               <span className="text-blue-400">A</span>
               <span className="text-yellow-400">Q</span>
               <span className="text-green-600">S</span>
-              &nbsp; University
             </strong>
           </p>
         </div>
