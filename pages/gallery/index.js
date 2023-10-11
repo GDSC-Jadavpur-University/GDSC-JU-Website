@@ -83,7 +83,7 @@ function Gallery() {
                 className={'float-right bottom-2 right-2 bg-slate-300 p-0.5 rounded absolute'}
                 onClick={() => openModal(team.imageSrc)}
               >
-                <FaMagnifyingGlassPlus size={'0.8em'} />
+                <FaMagnifyingGlassPlus size={'0.8em'} style={{ fill: 'black' }} />
               </button>
             </div>
           </motion.div>
