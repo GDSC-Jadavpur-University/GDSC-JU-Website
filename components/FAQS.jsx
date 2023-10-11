@@ -12,7 +12,7 @@ export default function FAQS() {
 
   return (
 
-    <>
+    <div>
       <Divider className="my-10" />
 
     <div>
@@ -41,6 +41,8 @@ export default function FAQS() {
         </AccordionItem>
       </Accordion>
       <Divider className="my-10" />
-    </>
+      </div>
+    
+    </div>
   );
 }
