@@ -31,19 +31,20 @@ function Gallery() {
   function closeModal() {
     setIsOpen(false);
   }
+  const customModalStyle = {
+    content: {
+      top: '100px',
+    },
+    overlay: {
+      backgroundColor: 'none',
+      backdropfilter: 'blur(80px)',
+    },
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <ReactModal
-        style={{
-          content: {
-            top: '100px',
-          },
-        }}
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-      >
+      <ReactModal style={customModalStyle} isOpen={modalIsOpen} onRequestClose={closeModal}>
         <button className="float-right " onClick={closeModal}>
-          <AiFillCloseCircle size={'2em'} />
+          <AiFillCloseCircle size={'2em'} style={{ fill: 'black' }} />
         </button>
         <Image
           src={image}
@@ -83,7 +84,7 @@ function Gallery() {
                 className={'float-right bottom-2 right-2 bg-slate-300 p-0.5 rounded absolute'}
                 onClick={() => openModal(team.imageSrc)}
               >
-                <FaMagnifyingGlassPlus size={'0.8em'} />
+                <FaMagnifyingGlassPlus size={'0.8em'} style={{ fill: 'black' }} />
               </button>
             </div>
           </motion.div>
