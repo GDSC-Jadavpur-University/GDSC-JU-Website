@@ -47,3 +47,4 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 3px solid #ffbb39;
   @apply absolute w-full top-[43%] left-0
 }
+
