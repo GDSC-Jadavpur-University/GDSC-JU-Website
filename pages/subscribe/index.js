@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 // const styles = {
 //   subscriptionContainer: {
@@ -68,7 +69,7 @@ function SubscriptionPage() {
   };
 
   const handleSubscribe = () => {
-    alert(`Subscribed with email: ${email}`);
+    toast.success(`Subscribed with email: ${email}`);
     setEmail('');
   };
 
@@ -118,6 +119,7 @@ function SubscriptionPage() {
             >
               Subscribe
             </button>
+            <Toaster />
           </div>
           <Image src="/gdsc.png" width={440} height={140} alt="Your Logo" />
         </div>
