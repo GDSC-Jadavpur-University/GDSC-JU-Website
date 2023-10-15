@@ -15,7 +15,7 @@ export default function FAQS() {
     <div>
       <Divider className="my-10" />
 
-    <div>
+    <div className="md:px-5 w-[95%] lg:w-[90%] relative mx-auto lg:mt-20 md:mt-[100px]">
       <div className="flex justify-center flex-col">
           <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
             <strong className="font-bold">
