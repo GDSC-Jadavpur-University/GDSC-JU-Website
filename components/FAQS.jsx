@@ -16,7 +16,7 @@ export default function FAQS() {
       <Divider className="my-10" />
 
     <div>
-      <div className="flex justify-center flex-col">
+      <div className="flex justify-center flex-col py-10">
           <p className="font-semibold text-5xl md:text-3xl mb-10 md:mb-5 leading-[4.8rem] ">
             <strong className="font-bold">
               <span className="text-red-400">F</span>
