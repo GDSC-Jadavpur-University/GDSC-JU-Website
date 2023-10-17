@@ -43,6 +43,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Learn NextUI](https://nextui.org/docs/guide/introduction) - NextUI documentation to  build beautiful and accessible user interfaces(Created on top of [Tailwind CSS](https://tailwindcss.com/) and [React Aria](https://react-spectrum.adobe.com/react-aria/index.html) )
+- [Learn WebSockets](https://websockets.readthedocs.io/en/stable/) - Learn WebSockets 
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
