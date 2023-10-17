@@ -41,7 +41,7 @@ function EventPage() {
 
 const EventCard = (props) => (
   <div className="col-md-4 mb-4">
-    <div className="bg-white rounded-lg shadow-lg">
+    <div className="bg-white dark:bg-white rounded-lg shadow-lg">
       <Image
         src={props.image}
         alt={props.title}
@@ -50,7 +50,7 @@ const EventCard = (props) => (
         height={180}
         objectFit="cover"
       />
-      <div className="p-6">
+      <div className="p-6 dark:text-white">
         <h3 className="text-xl font-semibold text-gray-800">{props.title}</h3>
         <p className="text-gray-600 mt-2">{props.description}</p>
         <a
