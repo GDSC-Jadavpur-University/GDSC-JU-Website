@@ -3,6 +3,11 @@
 ![GDSC](/public/gdsc.png)
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+### Website Looks
+![Screenshot_2](https://github.com/0xmuski/GDSC-JU-Website/assets/147321591/20d440d8-98df-4239-86e8-f692d9958a13)
+
+![Screenshot_3](https://github.com/0xmuski/GDSC-JU-Website/assets/147321591/d39979f1-8cb2-48c6-8995-58b743727d60)
+
 ## Getting Started
 
 First, Install necessary packages:
