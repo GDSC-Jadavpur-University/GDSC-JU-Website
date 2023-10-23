@@ -1,10 +1,7 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image/';
-import useWindowDimensions from '@/hooks/useWindowDimensions';
 import { motion } from 'framer-motion';
-import ReactModal from 'react-modal';
-import { AiFillCloseCircle } from 'react-icons/ai';
-import { FaMagnifyingGlassPlus } from 'react-icons/fa6';
 function Gallery() {
   const teams = [
     { imageSrc: '/Gallery/Copy of EXTENDED CORE TEAM.png' },
@@ -21,8 +18,6 @@ function Gallery() {
     { imageSrc: '/Gallery/Copy of Copy of Copy of IMG_0221_edited.jpg' },
     { imageSrc: '/Gallery/Copy of Copy of Copy of DSCN1311.jpg' },
   ];
-  const { height, width } = useWindowDimensions();
-  const [modalIsOpen, setIsOpen] = useState(false);
   const [image, setImage] = useState(null);
   function openModal(imageSrc) {
     setImage(imageSrc);
@@ -31,31 +26,9 @@ function Gallery() {
   function closeModal() {
     setIsOpen(false);
   }
-  const customModalStyle = {
-    content: {
-      top: '100px',
-    },
-    overlay: {
-      backgroundColor: 'none',
-      backdropfilter: 'blur(80px)',
-    },
-  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <ReactModal style={customModalStyle} isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <button className="float-right " onClick={closeModal}>
-          <AiFillCloseCircle size={'2em'} style={{ fill: 'black' }} />
-        </button>
-        <Image
-          src={image}
-          alt="team"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          width={width}
-          height={height}
-          className="rounded-medium"
-          objectFit="cover"
-        />
-      </ReactModal>
       <div className="flex flex-wrap justify-center items-center max-w-4xl">
         {teams.map((team, index) => (
           <motion.div
@@ -71,22 +44,24 @@ function Gallery() {
               delay: 0.1 * index,
             }}
           >
-            <div className={' relative'}>
-              <Image
-                src={team.imageSrc}
-                alt="team"
-                width={300}
-                height={300}
-                className="rounded-medium"
-                objectFit="cover"
-              />
-              <button
-                className={'float-right bottom-2 right-2 bg-slate-300 p-0.5 rounded absolute'}
-                onClick={() => openModal(team.imageSrc)}
-              >
-                <FaMagnifyingGlassPlus size={'0.8em'} style={{ fill: 'black' }} />
-              </button>
-            </div>
+            <Link href={`/imageModal?myProp=${team.imageSrc}`}>
+              <div className={' relative'}>
+                <Image
+                  src={team.imageSrc}
+                  alt="team"
+                  width={300}
+                  height={300}
+                  className="rounded-medium"
+                  objectFit="cover"
+                />
+                {/* <button
+                  className={'float-right bottom-2 right-2 bg-slate-300 p-0.5 rounded absolute'}
+                  onClick={() => openModal(team.imageSrc)}
+                >
+                  <FaMagnifyingGlassPlus size={'0.8em'} style={{ fill: 'black' }} />
+                </button> */}
+              </div>
+            </Link>
           </motion.div>
         ))}
       </div>

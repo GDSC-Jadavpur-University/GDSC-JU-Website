@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700,800");
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700,800');
 
 @tailwind base;
 @tailwind components;
@@ -37,13 +37,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fontDosis {
-  font-family: 'Dosis', sans-serif,
-    'Helvetica Neue', sans-serif,
-    'Arial', sans-serif;
+  font-family: 'Dosis', sans-serif, 'Helvetica Neue', sans-serif, 'Arial', sans-serif;
 }
 
 .strikeThru {
-  content: "";
+  content: '';
   border-bottom: 3px solid #ffbb39;
-  @apply absolute w-full top-[43%] left-0
+  @apply absolute w-full top-[43%] left-0;
+}
+
+.modal {
+  @apply fixed z-10 left-0 right-0 top-0 bottom-0 mx-auto bg-black/80;
+}
+
+.modal_wrapper {
+  @apply flex justify-start items-center flex-col absolute h-[85%] w-full bottom-0 bg-white rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
 }
