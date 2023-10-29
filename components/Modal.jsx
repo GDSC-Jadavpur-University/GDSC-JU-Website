@@ -23,12 +23,16 @@ const Modal = ({ children }) => {
 
   return (
     <div ref={overlay} className="modal" onClick={handleClick}>
-      <button type="button" onClick={onDismiss} className="absolute top-32 right-8 bg-black z-50 p-2 rounded-2xl">
+      <button
+        type="button"
+        onClick={onDismiss}
+        className="absolute top-32 right-8 bg-black dark:bg-gray z-50 p-2 rounded-2xl"
+      >
         {/* <div className="bg-black"> */}
         <Image src="/close.svg" width={17} height={17} alt="close" />
         {/* </div> */}
       </button>
-      <div ref={wrapper} className="modal_wrapper">
+      <div ref={wrapper} className="modal_wrapper dark:bg-black">
         {children}
       </div>
     </div>
