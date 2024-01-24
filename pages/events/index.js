@@ -16,6 +16,12 @@ function EventPage() {
       image: '/Orientation Event.jpg',
       link: 'https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-gdsc-ju-orientation-session/',
     },
+    {
+      title:'BitNBuild Event',
+      description:'National level hackathon with finals in Mumbai and first state level hackathon of West Bengal conducted by GDSC JU',
+      image:'/bitnbuild.png',
+      link:'https://bit-n-build-event.vercel.app/',
+    }
   ];
 
   return (
