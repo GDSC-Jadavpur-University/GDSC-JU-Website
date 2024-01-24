@@ -5,6 +5,14 @@ import CenterLayout from '@/layout/CenterLayout';
 function EventPage() {
   const EventData = [
     {
+      title:'BitNBuild Event',
+      description:'National level hackathon with finals in Mumbai and first state level hackathon of West Bengal conducted by GDSC JU',
+      image:'/bitnbuild.png',
+      link:'https://gdsc-ju.web.app/'
+
+      //link:'https://bit-n-build-event.vercel.app/',
+    },
+    {
       title: 'Speaker Session',
       description: 'Placement & Intern Talk With Vivek Gupta',
       image: '/Vivek Gupta Event.jpg',
@@ -15,12 +23,6 @@ function EventPage() {
       description: 'GDSC JU Orientation Session',
       image: '/Orientation Event.jpg',
       link: 'https://gdsc.community.dev/events/details/developer-student-clubs-jadavpur-university-kolkata-presents-gdsc-ju-orientation-session/',
-    },
-    {
-      title:'BitNBuild Event',
-      description:'National level hackathon with finals in Mumbai and first state level hackathon of West Bengal conducted by GDSC JU',
-      image:'/bitnbuild.png',
-      link:'https://bit-n-build-event.vercel.app/',
     }
   ];
 
