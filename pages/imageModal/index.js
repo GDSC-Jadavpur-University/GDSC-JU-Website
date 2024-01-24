@@ -3,7 +3,7 @@ import Image from 'next/image/';
 import Modal from '@/components/Modal';
 import { useRouter } from 'next/router';
 
-const imageModal = () => {
+const ImageModal = () => {
   const router = useRouter();
   let myProp = router.query.myProp;
 
@@ -24,4 +24,4 @@ const imageModal = () => {
   );
 };
 
-export default imageModal;
+export default ImageModal;
