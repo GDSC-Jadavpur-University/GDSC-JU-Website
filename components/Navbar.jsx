@@ -83,9 +83,9 @@ const Navbar = () => {
       </div>
       {/* THEME SWITCHER */}
       {/* <div className="hidden lg:flex lg:justify-end items-center w-1/3 space-x-4"> */}
-      <div className="flex justify-center items-center w-1/3 space-x-4">
+      <div className="flex lg:w-1/3 lg:justify-center lg:items-center space-x-4 gap-4">
         <ThemeSwitcher />
-      </div>
+  
       <div className="lg:hidden">
         <button onClick={toggleMenu}>
           {isMenuOpen ? (
@@ -94,6 +94,7 @@ const Navbar = () => {
             <FaBars className="text-3xl text-gray-600" />
           )}
         </button>
+      </div>
       </div>
       {isMenuOpen && (
         <div
